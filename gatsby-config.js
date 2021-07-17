@@ -1,14 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Paul Fleming Portfolio`,
     author: {
-      name: `Kyle Mathews`,
+      name: `Paul Fleming`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `kylemathews`,
+      instagram: ``,
+      github: ``,
+      linkedin: ``,
     },
   },
   plugins: [
