@@ -11,7 +11,7 @@ export default function header() {
             <p className="bodyTag code">{'<body>'}</p>
             <p className="innerTag code">{'<h1>'}</p>
             
-            <h1 className="landingText">Hey!<br></br>I'm Paul<br></br>Web Developer<br></br>&amp; Designer</h1>
+            <h1 className="landingText">Hey!<span className="wave"> 👋</span><br></br>I'm <span className="paul">Paul</span><br></br>a Web Developer<br></br>&amp; Designer</h1>
             <p className="innerTag code">{'</h1>'}</p>
             <p className="innerTag code">{'<button>'}</p>
             <button className="contactButton">Contact</button>
