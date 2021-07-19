@@ -15,41 +15,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  /* background: linear-gradient(45deg, #0C303F, #400F41); */
-  background: #202022;
+  background: linear-gradient(45deg, #0C303F, #400F41);
   width: 90vw;
   max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
   height: 100vh;
 }
 
 /* Landing Cover */
 
-.landingLeft {
-  width: 60%;
-  position: relative;
-}
-
-header {
-  display: flex;
-  align-content: space-between;
-  height: 100vh;
-}
-
 h1 {
   font-family: var(--header-text);
   color: var(--offwhite-text);
   font-size: 5vw;
+  font-weight: 700;
   margin-left: 8%;
   letter-spacing: -4px;
   line-height: 1.10em;
@@ -92,6 +80,7 @@ h1 {
   padding: 17px 35px;
   letter-spacing: 2px;
   margin-left: 8%;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1920px) {
@@ -118,7 +107,7 @@ h1 {
   position: absolute;
   z-index: 7;
   max-height: 90vh;
-  transform: translate(-26%, -5%) rotate(-14.53deg);
+  transform: translate(-10%, -5%) rotate(-14.53deg);
 }
 
 .blurGradient {
@@ -128,14 +117,14 @@ h1 {
   mix-blend-mode: hard-light;
   opacity: 95%;
   max-height: 90vh;
-  transform: translate(-26%, -5%) rotate(-14.53deg);
+  transform: translate(-10%, -5%) rotate(-14.53deg);
 }
 
 .outlineMiddle {
   position: absolute;
   z-index: 5;
   max-height: 90vh;
-  transform: translate(-21%, -1%) rotate(-21deg);
+  transform: translate(-5%, -1%) rotate(-21deg);
 }
 
 .logoMiddle {
@@ -143,21 +132,21 @@ h1 {
   position: absolute;
   mix-blend-mode: overlay;
   max-height: 90vh;
-  transform: translate(-21%, -1%) rotate(-21deg);
+  transform: translate(-5%, -1%) rotate(-21deg);
 }
 
 .logoBottom {
-  z-index: 3;
+  z-index: 2;
   position: absolute;
   max-height: 90vh;
-  transform: translate(-17%, 2%) rotate(-25.66deg);
+  transform: translate(-0%, 2%) rotate(-25.66deg);
 }
 
 .outlineBottom {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   max-height: 90vh;
-  transform: translate(-17%, 2%) rotate(-25.66deg);
+  transform: translate(-0%, 2%) rotate(-25.66deg);
 }
 
 .blurGradient2 {
@@ -167,6 +156,67 @@ h1 {
   mix-blend-mode: hard-light;
   opacity: 95%;
   max-height: 90vh;
-  transform: translate(-17%, 2%) rotate(-25.66deg);
+  transform: translate(-0%, 2%) rotate(-25.66deg);
 }
 
+/* Grid Test */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20vh, 1fr, 1fr;
+  height: 100vh;
+}
+
+.section_1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.headerTextGrid {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: flex-start;
+}
+
+.buttonArea {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-self: flex-end;
+}
+
+.LogoArea {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+/* Footer */
+
+footer {
+  height: 250px;
+}
+
+.footer {
+  display: flex;
+  color: #EBF5F7;
+}
+
+a {
+  display:inline-flex;
+  color: var(--offwhite-text);
+  font-family: var(--header-text);
+  align-self: center;
+  text-decoration: none;
+}
+
+footer p {
+  font-family: var(--code-text);
+  font-size: 9pt;
+  margin-top: 8px;
+  color: white;
+  align-self: center;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
+}
