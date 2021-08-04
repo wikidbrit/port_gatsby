@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HeaderGrid from "../components/headerGrid"
 import Footer from "../components/footer"
+import About from "../components/about"
+import Spacer from "../components/spacer"
 
 
 const BlogIndex = ({ data, location }) => {
@@ -30,8 +32,11 @@ const BlogIndex = ({ data, location }) => {
     // <Layout location={location} title={siteTitle}>
     <div>
       <Seo title="All posts" />
-      <HeaderGrid />
 
+      <HeaderGrid />
+      <Spacer />
+      <About />
+      <Spacer />
       <Footer />
       {/* <Header /> */}
       {/* <Bio />

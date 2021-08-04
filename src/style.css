@@ -7,7 +7,7 @@
   --pink-color: #FF00E3;
   --blue-color: #00B4D6;
   --header-text: "Poppins", sans-serif;
-  --body-text: :"Source Sans pro";
+  --body-text: :"Source Sans Pro", sans-serif;
   --code-text: "Roboto Mono";
 }
 
@@ -21,7 +21,6 @@
 body {
   background: linear-gradient(45deg, #0C303F, #400F41);
   width: 90vw;
-  max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
   overflow-y: auto;
@@ -36,11 +35,24 @@ header {
 h1 {
   font-family: var(--header-text);
   color: var(--offwhite-text);
-  font-size: 5vw;
+  font-size: 4.5vw;
   font-weight: 700;
   margin-left: 8%;
-  letter-spacing: -4px;
   line-height: 1.10em;
+}
+
+h2 {
+  font-family: var(--header-text);
+  color: var(--offwhite-text);
+  font-size: 3.5vw;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+p {
+  font-family: "Source Sans Pro";
+  color: var(--offwhite-text);
+  font-size: 1.5vw;
 }
 
 .paul {
@@ -51,7 +63,8 @@ h1 {
   -1px 0 black, 0 1px black, 
   1px 0 black, 0 -1px black;
   line-height: 1.10em;
-  font-size: 5.5vw;
+  font-size: 4.5vw;
+  font-weight: 700;
 }
 
 .wave {
@@ -76,16 +89,22 @@ h1 {
   font-family: "Source Sans Pro";
   background: none;
   color: white;
-  font-size: 16px;
+  font-size: 1em;
   padding: 17px 35px;
   letter-spacing: 2px;
   margin-left: 8%;
   cursor: pointer;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 960px) {
   h1 {
-     font-size: 105px;
+     font-size: 4.5vw;
+  }
+  .paul {
+    font-size: 4.5vw;
+  }
+  p {
+    font-size: 12pt;
   }
 }
 
@@ -93,7 +112,7 @@ h1 {
   color: white;
   opacity: 30%;
   font-family: var(--code-text);
-  font-size: 8pt;
+  font-size: 0.5rem;
 }
 
 /* Logo Cover */
@@ -106,7 +125,7 @@ h1 {
 .logoTop {
   position: absolute;
   z-index: 7;
-  max-height: 90vh;
+  max-height: 50vw;
   transform: translate(-10%, -5%) rotate(-14.53deg);
 }
 
@@ -116,14 +135,14 @@ h1 {
   filter: blur(15px);
   mix-blend-mode: hard-light;
   opacity: 95%;
-  max-height: 90vh;
+  max-height: 50vw;
   transform: translate(-10%, -5%) rotate(-14.53deg);
 }
 
 .outlineMiddle {
   position: absolute;
   z-index: 5;
-  max-height: 90vh;
+  max-height: 50vw;
   transform: translate(-5%, -1%) rotate(-21deg);
 }
 
@@ -131,21 +150,21 @@ h1 {
   z-index: 4;
   position: absolute;
   mix-blend-mode: overlay;
-  max-height: 90vh;
+  max-height: 50vw;
   transform: translate(-5%, -1%) rotate(-21deg);
 }
 
 .logoBottom {
   z-index: 2;
   position: absolute;
-  max-height: 90vh;
+  max-height: 50vw;
   transform: translate(-0%, 2%) rotate(-25.66deg);
 }
 
 .outlineBottom {
   position: absolute;
   z-index: 3;
-  max-height: 90vh;
+  max-height: 50vw;
   transform: translate(-0%, 2%) rotate(-25.66deg);
 }
 
@@ -155,23 +174,24 @@ h1 {
   filter: blur(15px);
   mix-blend-mode: hard-light;
   opacity: 95%;
-  max-height: 90vh;
+  max-height: 50vw;
   transform: translate(-0%, 2%) rotate(-25.66deg);
 }
 
-/* Grid Test */
+/* Landing Grid */
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 20vh, 1fr, 1fr;
-  height: 100vh;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: 10vh 1fr 1fr;
+  max-height: 100vh;
+  margin-bottom: 20px;
 }
 
 .section_1 {
   grid-column: 1/2;
   grid-row: 1/2;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .headerTextGrid {
@@ -191,23 +211,82 @@ h1 {
   grid-row: 1/4;
 }
 
+/* Spacer */
+
+.spacer {
+  background-color: #EBF5F7;
+  opacity: 0;
+  height: 50px;
+}
+
+/* About Section */
+
+.aboutWrapper {
+  display: grid;
+  height: 95vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10vh 40vh 40vh 10vh;
+  margin-top: 20px;
+}
+
+.whoIAm {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: flex-end;
+}
+
+.aboutText {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  max-width: 65%;
+
+}
+
+.circle {
+  height: 300px;
+  width: 300px;
+  background-color: var(--pink-color);
+  grid-column: 1/2;
+  grid-row: 2/4;
+  border-radius: 100%;
+  justify-self: center;
+  align-self: center;
+}
 /* Footer */
 
 footer {
+  display: flex;
   height: 250px;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2%;
 }
 
-.footer {
-  display: flex;
+.footwrap {
   color: #EBF5F7;
+  display: flex;
+  flex-direction: row;
+}
+
+.footwrap p {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: var(--offwhite-text);
+  font-family: var(--header-text);
+  font-size: 9pt;
+  line-height: 9px;
 }
 
 a {
-  display:inline-flex;
   color: var(--offwhite-text);
   font-family: var(--header-text);
-  align-self: center;
   text-decoration: none;
+  font-size: 9pt;
+}
+
+a:hover {
+  color: var(--blue-color);
 }
 
 footer p {
@@ -215,8 +294,6 @@ footer p {
   font-size: 9pt;
   margin-top: 8px;
   color: white;
-  align-self: center;
   font-weight: 500;
-  margin-left: 5px;
   margin-right: 5px;
 }
