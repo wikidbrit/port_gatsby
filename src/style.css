@@ -20,102 +20,48 @@
 
 body {
   background: linear-gradient(45deg, #0C303F, #400F41);
-  width: 90vw;
+  background-size: cover;
+  width: 100vw;
   margin: 0 auto;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-header {
-  height: 100vh;
+.code {
+  display: none;
 }
-
-/* Landing Cover */
 
 h1 {
   font-family: var(--header-text);
   color: var(--offwhite-text);
-  font-size: 4.5vw;
+  font-size: 270%;
   font-weight: 700;
-  margin-left: 8%;
+  margin-left: 0%;
   line-height: 1.10em;
-}
-
-h2 {
-  font-family: var(--header-text);
-  color: var(--offwhite-text);
-  font-size: 3.5vw;
-  font-weight: 700;
-  letter-spacing: 0px;
-}
-
-p {
-  font-family: "Source Sans Pro";
-  color: var(--offwhite-text);
-  font-size: 1.5vw;
+  text-align: center;
 }
 
 .paul {
-  text-shadow: 2px 6px 4px rgba(0,0,0,0.3),
-  0px -5px 35px rgba(255,255,255,0.3),
-  2px 1px 8px rgba(255,0,227,0.6),
-  -2px -1px 8px rgba(0,180,214,0.7),
-  -1px 0 black, 0 1px black, 
-  1px 0 black, 0 -1px black;
   line-height: 1.10em;
-  font-size: 4.5vw;
   font-weight: 700;
 }
 
-.wave {
-  font-size: .7em;
-  line-height: 1.10em;
+.wrapper {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-.outerTag {
-  margin: 2%;
+.headerTextGrid {
+  grid-row: 3/4;
 }
 
-.bodyTag {
-  margin: 3.5%;
+.logoArea {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
-
-.innerTag {
-  margin: 5%;
-}
-
-.contactButton {
-  border: 2px solid var(--blue-color) ;
-  font-family: "Source Sans Pro";
-  background: none;
-  color: white;
-  font-size: 1em;
-  padding: 17px 35px;
-  letter-spacing: 2px;
-  margin-left: 8%;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 960px) {
-  h1 {
-     font-size: 4.5vw;
-  }
-  .paul {
-    font-size: 4.5vw;
-  }
-  p {
-    font-size: 12pt;
-  }
-}
-
-.code {
-  color: white;
-  opacity: 30%;
-  font-family: var(--code-text);
-  font-size: 0.5rem;
-}
-
-/* Logo Cover */
 
 .landingRight {
   width: 40%;
@@ -123,10 +69,10 @@ p {
 }
 
 .logoTop {
-  position: absolute;
-  z-index: 7;
-  max-height: 50vw;
-  transform: translate(-10%, -5%) rotate(-14.53deg);
+    position: absolute;
+    z-index: 7;
+    max-height: 100vw;
+    transform: translate(-22%, -5%) rotate(-14.53deg);
 }
 
 .blurGradient {
@@ -135,37 +81,37 @@ p {
   filter: blur(15px);
   mix-blend-mode: hard-light;
   opacity: 95%;
-  max-height: 50vw;
-  transform: translate(-10%, -5%) rotate(-14.53deg);
+  max-height: 100vw;
+  transform: translate(-22%, -5%) rotate(-14.53deg);
 }
 
 .outlineMiddle {
   position: absolute;
   z-index: 5;
-  max-height: 50vw;
-  transform: translate(-5%, -1%) rotate(-21deg);
+  max-height: 100vw;
+  transform: translate(-15%, -1%) rotate(-21deg);
 }
 
 .logoMiddle {
   z-index: 4;
   position: absolute;
   mix-blend-mode: overlay;
-  max-height: 50vw;
-  transform: translate(-5%, -1%) rotate(-21deg);
+  max-height: 100vw;
+  transform: translate(-15%, -1%) rotate(-21deg);
 }
 
 .logoBottom {
   z-index: 2;
   position: absolute;
-  max-height: 50vw;
-  transform: translate(-0%, 2%) rotate(-25.66deg);
+  max-height: 100vw;
+  transform: translate(-5%, 2%) rotate(-25.66deg);
 }
 
 .outlineBottom {
   position: absolute;
   z-index: 3;
-  max-height: 50vw;
-  transform: translate(-0%, 2%) rotate(-25.66deg);
+  max-height: 100vw;
+  transform: translate(-5%, 2%) rotate(-25.66deg);
 }
 
 .blurGradient2 {
@@ -174,126 +120,12 @@ p {
   filter: blur(15px);
   mix-blend-mode: hard-light;
   opacity: 95%;
-  max-height: 50vw;
+  max-height: 100vw;
   transform: translate(-0%, 2%) rotate(-25.66deg);
-}
-
-/* Landing Grid */
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  grid-template-rows: 10vh 1fr 1fr;
-  max-height: 100vh;
-  margin-bottom: 20px;
-}
-
-.section_1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  align-self: flex-end;
-}
-
-.headerTextGrid {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  align-self: flex-start;
 }
 
 .buttonArea {
   grid-column: 1/2;
   grid-row: 3/4;
   align-self: flex-end;
-}
-
-.LogoArea {
-  grid-column: 2/3;
-  grid-row: 1/4;
-}
-
-/* Spacer */
-
-.spacer {
-  background-color: #EBF5F7;
-  opacity: 0;
-  height: 50px;
-}
-
-/* About Section */
-
-.aboutWrapper {
-  display: grid;
-  height: 95vh;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 10vh 40vh 40vh 10vh;
-  margin-top: 20px;
-}
-
-.whoIAm {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  align-self: flex-end;
-}
-
-.aboutText {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  align-self: center;
-  max-width: 65%;
-
-}
-
-.circle {
-  height: 300px;
-  width: 300px;
-  background-color: var(--pink-color);
-  grid-column: 1/2;
-  grid-row: 2/4;
-  border-radius: 100%;
-  justify-self: center;
-  align-self: center;
-}
-/* Footer */
-
-footer {
-  display: flex;
-  height: 250px;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 2%;
-}
-
-.footwrap {
-  color: #EBF5F7;
-  display: flex;
-  flex-direction: row;
-}
-
-.footwrap p {
-  margin-left: 5px;
-  margin-right: 5px;
-  color: var(--offwhite-text);
-  font-family: var(--header-text);
-  font-size: 9pt;
-  line-height: 9px;
-}
-
-a {
-  color: var(--offwhite-text);
-  font-family: var(--header-text);
-  text-decoration: none;
-  font-size: 9pt;
-}
-
-a:hover {
-  color: var(--blue-color);
-}
-
-footer p {
-  font-family: var(--code-text);
-  font-size: 9pt;
-  margin-top: 8px;
-  color: white;
-  font-weight: 500;
-  margin-right: 5px;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import "../styles/style2.css"
 
 export default function about() {
     return (

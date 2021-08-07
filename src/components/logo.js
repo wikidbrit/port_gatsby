@@ -7,14 +7,14 @@ import WhiteOutline from '../images/LogoLarge-04.png'
 export default function logo() {
     return (
         <div className="landingRight">
-            <img className="logoTop" src={LogoTop}></img>
-            <img className="outlineMiddle" src={WhiteOutline}></img>
-            <img className="blurGradient" src={LogoBottom}></img>
-            <img className="logoMiddle" src={LogoMiddle}></img>
+            <img className="logoTop" src={LogoTop} alt="part of the logo stack"></img>
+            <img className="outlineMiddle" src={WhiteOutline} alt="part of the logo stack"></img>
+            <img className="blurGradient" src={LogoBottom} alt="part of the logo stack"></img>
+            <img className="logoMiddle" src={LogoMiddle} alt="part of the logo stack"></img>
             
-            <img className="logoBottom" src={LogoBottom}></img>
-            <img className="outlineBottom" src={WhiteOutline}></img>
-            <img className="blurGradient2" src={LogoBottom}></img>
+            <img className="logoBottom" src={LogoBottom} alt="part of the logo stack"></img>
+            <img className="outlineBottom" src={WhiteOutline} alt="part of the logo tack"></img>
+            <img className="blurGradient2" src={LogoBottom} alt="part of the logo stack"></img>
         </div>
     )
 }
