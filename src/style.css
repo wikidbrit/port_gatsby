@@ -34,11 +34,11 @@ body {
 h1 {
   font-family: var(--header-text);
   color: var(--offwhite-text);
-  font-size: 270%;
+  font-size: 200%;
   font-weight: 700;
-  margin-left: 0%;
+  margin-left: 8%;
   line-height: 1.10em;
-  text-align: center;
+  text-align: left;
 }
 
 .paul {
@@ -50,7 +50,6 @@ h1 {
   display: grid;
   height: 100vh;
   width: 100vw;
-  grid-template-columns: 1;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -58,9 +57,9 @@ h1 {
   grid-row: 3/4;
 }
 
-.logoArea {
+.LogoArea {
   grid-column: 1/2;
-  grid-row: 1/2;
+  grid-row: 1/3;
 }
 
 .landingRight {
@@ -68,11 +67,17 @@ h1 {
   position: relative;
 }
 
+.headerTextGrid {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-self: flex-start;
+}
 .logoTop {
     position: absolute;
     z-index: 7;
-    max-height: 100vw;
-    transform: translate(-22%, -5%) rotate(-14.53deg);
+    height: 120vw;
+    max-height: 50vh;
+    transform: translate(-5%, 0%) rotate(-14.53deg);
 }
 
 .blurGradient {
@@ -81,37 +86,42 @@ h1 {
   filter: blur(15px);
   mix-blend-mode: hard-light;
   opacity: 95%;
-  max-height: 100vw;
-  transform: translate(-22%, -5%) rotate(-14.53deg);
+  height: 120vw;
+  max-height: 50vh;
+  transform: translate(-5%, 0%) rotate(-14.53deg);
 }
 
 .outlineMiddle {
   position: absolute;
   z-index: 5;
-  max-height: 100vw;
-  transform: translate(-15%, -1%) rotate(-21deg);
+  height: 120vw;
+  max-height: 50vh;
+  transform: translate(0%, 5%) rotate(-21deg);
 }
 
 .logoMiddle {
   z-index: 4;
   position: absolute;
   mix-blend-mode: overlay;
-  max-height: 100vw;
-  transform: translate(-15%, -1%) rotate(-21deg);
+  height: 120vw;
+  max-height: 50vh;
+  transform: translate(0%, 5%) rotate(-21deg);
 }
 
 .logoBottom {
   z-index: 2;
   position: absolute;
-  max-height: 100vw;
-  transform: translate(-5%, 2%) rotate(-25.66deg);
+  height: 120vw;
+  max-height: 50vh;
+  transform: translate(5%, 10%) rotate(-25.66deg);
 }
 
 .outlineBottom {
   position: absolute;
   z-index: 3;
-  max-height: 100vw;
-  transform: translate(-5%, 2%) rotate(-25.66deg);
+  height: 120vw;
+  max-height: 50vh;
+  transform: translate(5%, 10%) rotate(-25.66deg);
 }
 
 .blurGradient2 {
@@ -120,12 +130,28 @@ h1 {
   filter: blur(15px);
   mix-blend-mode: hard-light;
   opacity: 95%;
-  max-height: 100vw;
-  transform: translate(-0%, 2%) rotate(-25.66deg);
+  height: 120vw;
+  max-height: 50vh;
+  transform: translate(5%, 10%) rotate(-25.66deg);
 }
 
 .buttonArea {
   grid-column: 1/2;
   grid-row: 3/4;
+  margin-left: 8%;
+  margin-bottom: 5%;
+  justify-self: left;
   align-self: flex-end;
+
+}
+
+.contactButton {
+  border: 2px solid var(--blue-color) ;
+  font-family: "Source Sans Pro";
+  background: none;
+  color: white;
+  font-size: 1em;
+  padding: 14px 36px;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
