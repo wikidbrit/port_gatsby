@@ -9,6 +9,7 @@ import HeaderGrid from "../components/headerGrid"
 import Footer from "../components/footer"
 import About from "../components/about"
 import Spacer from "../components/spacer"
+import Projects from "../components/projects"
 
 
 const BlogIndex = ({ data, location }) => {
@@ -37,6 +38,8 @@ const BlogIndex = ({ data, location }) => {
       <HeaderGrid />
       <Spacer />
       <About />
+      <Spacer />
+      <Projects />
       <Spacer />
       <Footer />
       {/* <Header /> */}
