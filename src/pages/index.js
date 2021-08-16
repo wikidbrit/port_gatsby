@@ -1,9 +1,8 @@
 import * as React from "react"
-// import { Link, graphql } from "gatsby"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
+// import Bio from "../components/bio"
+// import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HeaderGrid from "../components/headerGrid"
 import Footer from "../components/footer"
@@ -12,29 +11,28 @@ import Spacer from "../components/spacer"
 import Projects from "../components/projects"
 
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+const BlogIndex = ({ data }) => {
+  // const siteTitle = data.site.siteMetadata?.title || `Title`
+  const posts = data.allContentfulProjects.edges
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
+  // if (posts.length === 0) {
+  //   return (
+  //     <Layout location={location} title={siteTitle}>
+  //       <Seo title="All posts" />
+  //       <Bio />
+  //       <p>
+  //         No blog posts found. Add markdown posts to "content/blog" (or the
+  //         directory you specified for the "gatsby-source-filesystem" plugin in
+  //         gatsby-config.js).
+  //       </p>
+  //     </Layout>
+  //   )
+  // }
 
   return (
     // <Layout location={location} title={siteTitle}>
     <div>
       <Seo title="All posts" />
-
       <HeaderGrid />
       <Spacer />
       <About />
@@ -43,13 +41,12 @@ const BlogIndex = ({ data, location }) => {
       <Spacer />
       <Footer />
       {/* <Header /> */}
-      {/* <Bio />
+      {/* <Bio /> */}
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
+          console.log(post.node.overview.internal.content)
           return (
-            <li key={post.fields.slug}>
+            <li key={post.node.slug}>
               <article
                 className="post-list-item"
                 itemScope
@@ -57,25 +54,19 @@ const BlogIndex = ({ data, location }) => {
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
+                    <Link to={post.node.slug} itemProp="url">
+                      <span itemProp="headline">{post.node.title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
+                  <p>{post.node.overview.internal.content}</p>
                 </section>
               </article>
             </li>
           )
         })}
-      </ol> */}
+      </ol>
     {/* </Layout> */}
     </div>
   )
@@ -83,25 +74,22 @@ const BlogIndex = ({ data, location }) => {
 
 export default BlogIndex
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
+export const pageQuery = graphql
+`
+{
+  allContentfulProjects {
+    edges {
+      node {
+        slug
         title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
+        author
+        overview {
+          internal {
+            content
+          }
         }
       }
     }
   }
+}
 `
