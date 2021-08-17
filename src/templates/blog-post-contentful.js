@@ -1,5 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
+import Spacer from "../components/spacer"
+import Footer from "../components/footer"
 
 const BlogPostContentfulTemplate = ({ data, location }) => {
   const post = data.allContentfulProjects.edges[0].node
@@ -21,17 +23,30 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
   return (
     <div id="blogPost" location={location} title={siteTitle}>
       <img alt={coverImageAlt} src={coverImageUrl}></img>
+      <Spacer />
       <h1>{post.title}</h1>
-      <p>{overviewText}</p>
+      <Spacer />
+      <p dangerouslySetInnerHTML={{__html:overviewText}} />
+      <Spacer />
       <img alt={image1Alt} src={image1Url}></img>
+      <Spacer />
       <h2>Our Solution</h2>
-      <p>{solutionText}</p>
+      <Spacer />
+      <p dangerouslySetInnerHTML={{__html:solutionText}} />
+      <Spacer />
       <img alt={image2Alt} src={image2Url}></img>
+      <Spacer />
       <h2>My Role</h2>
-      <p>{roleText}</p>
+      <Spacer />
+      <p dangerouslySetInnerHTML={{__html:roleText}} />
+      <Spacer />
       <img alt={image3Alt} src={image3Url}></img>
+      <Spacer />
       <h2>Conclusion</h2>
-      <p>{conclusionText}</p>
+      <Spacer />
+      <p dangerouslySetInnerHTML={{__html:conclusionText}} />
+      <Spacer />
+      <Footer />
     </div>
   )
 }
