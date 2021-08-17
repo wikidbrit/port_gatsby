@@ -32,12 +32,13 @@ const BlogIndex = ({ data }) => {
                 <header>
                   <h2>
                     <Link to={post.node.slug} itemProp="url">
-                      <span itemProp="headline">{post.node.title}</span>
+                      <span className="projectTitle" itemProp="headline">{post.node.title}</span>
                     </Link>
                   </h2>
                 </header>
                 <section>
-                  <p>{post.node.category}</p>
+                  <p className="categoryText">{post.node.category}</p>
+                  <p className="date">{post.node.createdAt}</p>
                 </section>
               </article>
             </li>
@@ -60,6 +61,7 @@ export const pageQuery = graphql`
           slug
           title
           category
+          createdAt(formatString: "'de' MMMM, YYYY")
         }
       }
     }
