@@ -7,6 +7,7 @@ import Footer from "../components/footer"
 import About from "../components/about"
 import Spacer from "../components/spacer"
 import Projects from "../components/projects"
+import Form from '../components/form'
 
 const BlogIndex = ({ data }) => {
   const posts = data.allContentfulProjects.edges
@@ -46,6 +47,7 @@ const BlogIndex = ({ data }) => {
         })}
       </ol>
       <Spacer />
+      <Form />
       <Footer />
     </div>
   )

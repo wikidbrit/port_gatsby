@@ -4,47 +4,47 @@ import Spacer from "../components/spacer"
 import Footer from "../components/footer"
 
 const BlogPostContentfulTemplate = ({ data, location }) => {
+
   const post = data.allContentfulProjects.edges[0].node
   const siteTitle = data.allContentfulProjects?.title || "Title"
-  const coverImageUrl = 'https:'+post.coverimage.file.url
+  const coverImageUrl = "https:" + post.coverimage.file.url
   const coverImageAlt = post.coverimage.file.filename
   const overviewText = post.overview.internal.content
-  const image1Url = 'https:'+post.image1.file.url
+  const image1Url = "https:" + post.image1.file.url
   const image1Alt = post.image1.file.filename
-  const image2Url = 'https:'+post.image2.file.url
+  const image2Url = "https:" + post.image2.file.url
   const image2Alt = post.image2.file.filename
-  const image3Url = 'https:'+post.image3.file.url
+  const image3Url = "https:" + post.image3.file.url
   const image3Alt = post.image3.file.filename
   const solutionText = post.solution.internal.content
   const roleText = post.roletext.internal.content
   const conclusionText = post.conclusion.internal.content
 
-
   return (
     <div id="blogPost" location={location} title={siteTitle}>
-      <img alt={coverImageAlt} src={coverImageUrl}></img>
+      <img className="coverImage" alt={coverImageAlt} src={coverImageUrl}></img>
       <Spacer />
       <h1>{post.title}</h1>
       <Spacer />
-      <p dangerouslySetInnerHTML={{__html:overviewText}} />
+      <p dangerouslySetInnerHTML={{ __html: overviewText }} />
       <Spacer />
-      <img alt={image1Alt} src={image1Url}></img>
+      <img className="image1" alt={image1Alt} src={image1Url}></img>
       <Spacer />
       <h2>Our Solution</h2>
       <Spacer />
-      <p dangerouslySetInnerHTML={{__html:solutionText}} />
+      <p dangerouslySetInnerHTML={{ __html: solutionText }} />
       <Spacer />
-      <img alt={image2Alt} src={image2Url}></img>
+      <img className="image2" alt={image2Alt} src={image2Url}></img>
       <Spacer />
       <h2>My Role</h2>
       <Spacer />
-      <p dangerouslySetInnerHTML={{__html:roleText}} />
+      <p dangerouslySetInnerHTML={{ __html: roleText }} />
       <Spacer />
-      <img alt={image3Alt} src={image3Url}></img>
+      <img className="image3" alt={image3Alt} src={image3Url}></img>
       <Spacer />
       <h2>Conclusion</h2>
       <Spacer />
-      <p dangerouslySetInnerHTML={{__html:conclusionText}} />
+      <p dangerouslySetInnerHTML={{ __html: conclusionText }} />
       <Spacer />
       <Footer />
     </div>
