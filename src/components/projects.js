@@ -25,7 +25,7 @@ export default function projects(props) {
                   <h2>
                     <Link to={post.node.slug} itemProp="url">
                       <span className="projectTitle" itemProp="headline">
-                        {post.node.title}
+                      <span className="projectArrow">► </span>{post.node.title}
                       </span>
                     </Link>
                   </h2>

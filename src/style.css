@@ -43,7 +43,6 @@ h1 {
   margin-left: 8%;
   line-height: 1.10em;
   text-align: left;
-  padding-top: 20px;
 }
 
 .paul {
@@ -53,7 +52,7 @@ h1 {
 
 .wrapper {
   display: grid;
-  height: 95vh;
+  min-height: 95vh;
   width: 100vw;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -151,21 +150,22 @@ h1 {
 
 .contactButton {
   height: 46px;
-  padding: 12px 20px;
+  padding: 12px 45px;
   margin: 8px 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  font-family:var(--code-text);
-  font-size: 8pt;
-  font-weight: 700;
+  font-family: "Source Sans Pro";
+  font-size: 12pt;
+  font-weight: 300;
   letter-spacing: 1.05px;
   color: white;
-  background: rgba(0 , 180, 214, 0.6);
+  background: #196DB6;
+  border-radius: 3px;
 }
 
 .spacer {
   background-color: #EBF5F7;
   opacity: 0;
-  height: 50px;
+  height: 40px;
 }
 
 /* About Section */
@@ -188,6 +188,8 @@ h2 {
   align-self: center;
   margin-top: 25px;
   margin-bottom: 25px;
+  text-shadow: 2px 6px 4px rgb(0 0 0 / 30%), 0px -5px 35px rgb(255 255 255 / 30%), 2px 1px 8px rgb(255 0 227 / 60%), -2px -1px 8px rgb(0 180 214 / 70%), -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  line-height: 1.10em;
 }
 
 .aboutText {
@@ -203,10 +205,12 @@ h2 {
 /* line */
 
 .hr {
-  display: flex;
+  display: none;
   width: 16%;
   height: 1px;
-  margin: 16px auto;
+  margin-left: 8%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   flex-direction: row;
   border: none;
   border-radius: 50%;
@@ -241,7 +245,8 @@ footer {
   color: var(--offwhite-text);
   font-family: var(--header-text);
   text-decoration: none;
-  font-size: 12pt;
+  font-size: 10pt;
+  margin-bottom: 8px;
 }
 
 a:hover {
@@ -249,12 +254,17 @@ a:hover {
 }
 
 footer p {
-  font-family: var(--code-text);
+  font-family: "Source Sans Pro";
   font-size: 8pt;
   margin-top: 8px;
   color: white;
   font-weight: 500;
   margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.references {
+  font-family: var(--code-text);
 }
 
 .references a {
@@ -281,12 +291,20 @@ footer p {
   color: var(--offwhite-text);
 }
 
+.projectArrow {
+  color: grey;
+  font-size: 8pt;
+  justify-self: center;
+  margin-right: 5px;
+}
+
 .categoryText {
   font-family: "Source Sans Pro";
   letter-spacing: 1.1pt;
   color: var(--offwhite-text);
   font-size: 9pt;
-  margin-top: 4px;
+  margin-top: 6px;
+  margin-left: 18px;
 }
 
 .date {
@@ -295,6 +313,7 @@ footer p {
   color: grey;
   line-height: 1.7;
   margin-bottom: 16px;
+  margin-left: 22px;
 }
 
 /* Form */
@@ -314,6 +333,7 @@ input {
   font-family: "Source Sans Pro";
   font-size: 12pt;
   background-color: rgba(0 , 180, 214, 0.25);
+  border-radius: 3px;
 }
 
 textarea {
@@ -324,21 +344,22 @@ textarea {
   font-family: "Source Sans Pro";
   font-size: 12pt;
   background-color: rgba(0 , 180, 214, 0.25);
+  border-radius: 3px;
 }
 
 .formButton {
   align-self: flex-end;
-  width: 92px;
   height: 46px;
-  padding: 12px 20px;
+  padding: 12px 45px;
   margin: 8px 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  font-family:var(--code-text);
-  font-size: 8pt;
-  font-weight: 700;
+  font-family: "Source Sans Pro";
+  font-size: 12pt;
+  font-weight: 300;
   letter-spacing: 1.05px;
   color: white;
-  background: rgba(0 , 180, 214, 0.6);
+  background: #196DB6;
+  border-radius: 3px;
 }
 
 .subText {

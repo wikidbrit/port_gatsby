@@ -23,6 +23,7 @@ const BlogIndex = ({ data }) => {
       <Projects data={data}/>
       <Spacer />
       <Form />
+      <Spacer />
       <Footer />
     </div>
   )

@@ -5,6 +5,7 @@ import Line from "../components/line"
 export default function footer() {
   return (
     <footer>
+        <Line />
       <div className="footwrap percent">
         <a href="https://github.com/wikidbrit" target="_blank" rel="noreferrer">
           GitHub /
@@ -26,8 +27,7 @@ export default function footer() {
           LinkedIn
         </a>
       </div>
-      <Line />
-      <p className="percent">©2021 Paul Fleming</p>
+      <p className="percent">© 2021 Paul Fleming</p>
       <p className="percent references">
         Made with{" "}
         <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">
