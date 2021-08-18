@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Seo from "../components/seo"
 import HeaderGrid from "../components/headerGrid"
@@ -9,8 +9,9 @@ import Spacer from "../components/spacer"
 import Projects from "../components/projects"
 import Form from '../components/form'
 
+
+
 const BlogIndex = ({ data }) => {
-  const posts = data.allContentfulProjects.edges
 
   return (
     <div>
@@ -19,33 +20,7 @@ const BlogIndex = ({ data }) => {
       <Spacer />
       <About />
       <Spacer />
-      <Projects />
-      <Spacer />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          return (
-            <li key={post.node.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.node.slug} itemProp="url">
-                      <span className="projectTitle" itemProp="headline">{post.node.title}</span>
-                    </Link>
-                  </h2>
-                </header>
-                <section>
-                  <p className="categoryText">{post.node.category}</p>
-                  <p className="date">{post.node.createdAt}</p>
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
+      <Projects data={data}/>
       <Spacer />
       <Form />
       <Footer />
@@ -63,7 +38,7 @@ export const pageQuery = graphql`
           slug
           title
           category
-          createdAt(formatString: "'de' MMMM, YYYY")
+          createdAt(formatString: "de MMMM, YYYY")
         }
       }
     }

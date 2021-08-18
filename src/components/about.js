@@ -1,11 +1,14 @@
 import React from 'react'
+
 import "../styles/style2.css"
 import ProfileImage from "../images/profileimage2.png"
+import Line from '../components/line'
 
 export default function about() {
     return (
         <div className="aboutWrapper">
-            <h2 className="whoIAm">Who I am</h2>
+            <h2 className="whoIAm percent">Who I am</h2>
+            <Line />
             <img className="paul" src={ProfileImage} alt="Paul Fleming Posing in a Circle"></img>
             <p className="aboutText">I am a Front End Developer and Digital Designer currently studying in Stockholm, Sweden. I enjoy working with design and seeing through what I create.
                 <br></br><br></br>

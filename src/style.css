@@ -53,6 +53,10 @@ h1 {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.percent {
+  margin-left: 8%;
+}
+
 .headerTextGrid {
   grid-row: 3/4;
 }
@@ -165,7 +169,6 @@ h1 {
 }
 
 h2 {
-  margin-left: 8%;
   color: var(--offwhite-text);
   font-family: var(--header-text);
   color: var(--offwhite-text);
@@ -189,6 +192,20 @@ h2 {
   max-width: 80%;
   color: var(--offwhite-text);
 }
+
+/* line */
+
+.hr {
+  display: flex;
+  width: 60%;
+  height: 2px;
+  margin: 16px auto;
+  flex-direction: row;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgba(0,180,214,1) 0%, rgba(255,0,227,1) 100%);
+}
+
 
 /* Footer */
 
@@ -234,3 +251,37 @@ footer p {
   font-weight: 500;
   margin-right: 5px;
 }
+
+/* Project Titles */
+
+.projectWrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 80%;
+  margin: 0 auto;
+
+}
+
+.projectTitle {
+  font-size: 160%;
+  font-weight: 500;
+  letter-spacing: 1.1pt;
+}
+
+.categoryText {
+  font-family: "Source Sans Pro";
+  letter-spacing: 1.1pt;
+  color: var(--offwhite-text);
+  font-size: 9pt;
+}
+
+.date {
+  font-family: var(--code-text);
+  font-size: 8pt;
+  color: grey;
+  line-height: 1.7;
+}
+
+/* Form */
+
