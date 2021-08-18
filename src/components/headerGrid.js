@@ -15,7 +15,7 @@ export default function headerGrid() {
             </div>
             <div className="buttonArea">
                 <p className="innerTag code">{'<button>'}</p>
-                <a href="#contact" className="contactButton">Contact</a>
+                <a href="#contact" className="contactButton">Contact ▼</a>
                 <p className="innerTag code">{'</button>'}</p>
             </div>
             <div className="LogoArea">

@@ -27,6 +27,10 @@ body {
   overflow-y: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .code {
   display: none;
 }
@@ -34,11 +38,12 @@ body {
 h1 {
   font-family: var(--header-text);
   color: var(--offwhite-text);
-  font-size: 170%;
+  font-size: 190%;
   font-weight: 700;
   margin-left: 8%;
   line-height: 1.10em;
   text-align: left;
+  padding-top: 20px;
 }
 
 .paul {
@@ -82,7 +87,7 @@ h1 {
     align-self: center;
     z-index: 7;
     height: 120vw;
-    transform: translate(-5%, -5%) rotate(-14.53deg);
+    transform: translate(-5%, -10%) rotate(-14.53deg);
 }
 
 .blurGradient {
@@ -92,14 +97,14 @@ h1 {
   mix-blend-mode: hard-light;
   opacity: 95%;
   height: 120vw;
-  transform: translate(-5%, -5%) rotate(-14.53deg);
+  transform: translate(-5%, -10%) rotate(-14.53deg);
 }
 
 .outlineMiddle {
   position: absolute;
   z-index: 5;
   height: 115vw;
-  transform: translate(3%, 2%) rotate(-21deg);
+  transform: translate(3%, -2%) rotate(-21deg);
 }
 
 .logoMiddle {
@@ -107,21 +112,21 @@ h1 {
   position: absolute;
   mix-blend-mode: overlay;
   height: 115vw;
-  transform: translate(3%, 2%) rotate(-21deg);
+  transform: translate(3%, -2%) rotate(-21deg);
 }
 
 .logoBottom {
   z-index: 2;
   position: absolute;
   height: 110vw;
-  transform: translate(11%, 9%) rotate(-25.66deg);
+  transform: translate(11%, 5%) rotate(-25.66deg);
 }
 
 .outlineBottom {
   position: absolute;
   z-index: 3;
   height: 110vw;
-  transform: translate(11%, 9%) rotate(-25.66deg);
+  transform: translate(11%, 5%) rotate(-25.66deg);
 }
 
 .blurGradient2 {
@@ -131,7 +136,7 @@ h1 {
   mix-blend-mode: hard-light;
   opacity: 95%;
   height: 110vw;
-  transform: translate(11%, 9%) rotate(-25.66deg);
+  transform: translate(11%, 5%) rotate(-25.66deg);
 }
 
 .buttonArea {
@@ -148,14 +153,13 @@ h1 {
   height: 46px;
   padding: 12px 20px;
   margin: 8px 0;
-  border: 1px solid white;
-  border-radius: 8px;
-  font-family: "Source Sans Pro";
-  font-size: 12pt;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family:var(--code-text);
+  font-size: 8pt;
   font-weight: 700;
   letter-spacing: 1.05px;
   color: white;
-  background: linear-gradient(45deg, rgba(0,180,214,1) 0%, rgba(255,0,227,1) 100%)
+  background: rgba(0 , 180, 214, 0.6);
 }
 
 .spacer {
@@ -226,7 +230,6 @@ footer {
 }
 
 .footwrap p {
-  margin-left: 5px;
   margin-right: 5px;
   color: var(--offwhite-text);
   font-family: var(--header-text);
@@ -234,7 +237,7 @@ footer {
   line-height: 9px;
 }
 
-a {
+.footwrap a {
   color: var(--offwhite-text);
   font-family: var(--header-text);
   text-decoration: none;
@@ -254,6 +257,13 @@ footer p {
   margin-right: 5px;
 }
 
+.references a {
+  text-decoration: underline;
+  color: white;
+  line-height: 1.1rem;
+  cursor: pointer;
+}
+
 /* Project Titles */
 
 .projectWrapper {
@@ -266,7 +276,7 @@ footer p {
 }
 
 .projectTitle {
-  font-size: 140%;
+  font-size: 75%;
   font-weight: 700;
   color: var(--offwhite-text);
 }
@@ -301,7 +311,6 @@ input {
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid rgb(125, 124, 124);
-  border-radius: 8px;
   font-family: "Source Sans Pro";
   font-size: 12pt;
   background-color: rgba(0 , 180, 214, 0.25);
@@ -312,26 +321,24 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid rgb(125, 124, 124);
-  border-radius: 8px;
   font-family: "Source Sans Pro";
   font-size: 12pt;
   background-color: rgba(0 , 180, 214, 0.25);
 }
 
 .formButton {
-  height: 38px;
-  width: 92px;
-  padding: 6px 20px;
-  margin: 8px 0;
-  border: 1px solid white;
-  border-radius: 8px;
-  font-family: "Source Sans Pro";
   align-self: flex-end;
-  font-size: 12pt;
+  width: 92px;
+  height: 46px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family:var(--code-text);
+  font-size: 8pt;
   font-weight: 700;
   letter-spacing: 1.05px;
   color: white;
-  background:rgba(255,0,227,1);
+  background: rgba(0 , 180, 214, 0.6);
 }
 
 .subText {
