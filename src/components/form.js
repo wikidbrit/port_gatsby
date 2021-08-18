@@ -5,7 +5,7 @@ import Line from '../components/line'
 
 export default function form() {
   return (
-    <div className="formContainer">
+    <div id="contact" className="formContainer">
       <h2 className="percent">Contact Me</h2>
       <Line />
       <Spacer />
@@ -36,8 +36,9 @@ export default function form() {
           required
           minLength="20"
         />
-        <button type="submit">Send</button>
+        <button className="formButton" type="submit">Send</button>
       </form>
+      <p className="subText">You may expect a response within 24 hours.</p>
     </div>
   )
 }

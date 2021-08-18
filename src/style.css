@@ -48,7 +48,7 @@ h1 {
 
 .wrapper {
   display: grid;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -145,14 +145,17 @@ h1 {
 }
 
 .contactButton {
-  border: 2px solid var(--blue-color) ;
+  height: 46px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid white;
+  border-radius: 8px;
   font-family: "Source Sans Pro";
-  background: none;
+  font-size: 12pt;
+  font-weight: 700;
+  letter-spacing: 1.05px;
   color: white;
-  font-size: .8em;
-  padding: 12px 12px;
-  letter-spacing: 2px;
-  cursor: pointer;
+  background: linear-gradient(45deg, rgba(0,180,214,1) 0%, rgba(255,0,227,1) 100%)
 }
 
 .spacer {
@@ -203,7 +206,7 @@ h2 {
   flex-direction: row;
   border: none;
   border-radius: 50%;
-  background: linear-gradient(90deg, rgba(0,180,214,1) 0%, rgba(255,0,227,1) 100%);
+  background: linear-gradient(45deg, rgba(0,180,214,1) 0%, rgba(255,0,227,1) 100%);
 }
 
 
@@ -211,10 +214,9 @@ h2 {
 
 footer {
   display: flex;
-  height: 250px;
+  height: 200px;
   justify-content: center;
   flex-direction: column;
-  padding-left: 8%;
 }
 
 .footwrap {
@@ -236,7 +238,7 @@ a {
   color: var(--offwhite-text);
   font-family: var(--header-text);
   text-decoration: none;
-  font-size: 9pt;
+  font-size: 12pt;
 }
 
 a:hover {
@@ -245,7 +247,7 @@ a:hover {
 
 footer p {
   font-family: var(--code-text);
-  font-size: 9pt;
+  font-size: 8pt;
   margin-top: 8px;
   color: white;
   font-weight: 500;
@@ -274,6 +276,7 @@ footer p {
   letter-spacing: 1.1pt;
   color: var(--offwhite-text);
   font-size: 9pt;
+  margin-top: 4px;
 }
 
 .date {
@@ -281,7 +284,58 @@ footer p {
   font-size: 8pt;
   color: grey;
   line-height: 1.7;
+  margin-bottom: 16px;
 }
 
 /* Form */
 
+.formBox {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+input {
+  height: 46px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-family: "Source Sans Pro";
+  font-size: 12pt;
+  background-color: rgba(0 , 180, 214, 0.25);
+}
+
+textarea {
+  height: 138px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-family: "Source Sans Pro";
+  font-size: 12pt;
+  background-color: rgba(0 , 180, 214, 0.25);
+}
+
+.formButton {
+  height: 46px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-family: "Source Sans Pro";
+  font-size: 12pt;
+  font-weight: 700;
+  letter-spacing: 1.05px;
+  color: white;
+  background: linear-gradient(90deg, rgba(0,180,214,1) 0%, rgba(255,0,227,1) 100%);
+}
+
+.subText {
+  font-family: var(--code-text);
+  font-size: 6pt;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
