@@ -36,9 +36,9 @@ export default function form() {
           required
           minLength="20"
         />
+        <p className="subText">You may expect a response within 24 hours.</p>
         <button className="formButton" type="submit">Send</button>
       </form>
-      <p className="subText">You may expect a response within 24 hours.</p>
     </div>
   )
 }

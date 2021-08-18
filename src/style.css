@@ -200,13 +200,13 @@ h2 {
 
 .hr {
   display: flex;
-  width: 60%;
-  height: 2px;
+  width: 16%;
+  height: 1px;
   margin: 16px auto;
   flex-direction: row;
   border: none;
   border-radius: 50%;
-  background: linear-gradient(45deg, rgba(0,180,214,1) 0%, rgba(255,0,227,1) 100%);
+  background: linear-gradient(45deg, rgba(0,180,214,0.6) 0%, rgba(255,0,227,0.6) 100%);
 }
 
 
@@ -266,9 +266,9 @@ footer p {
 }
 
 .projectTitle {
-  font-size: 160%;
-  font-weight: 500;
-  letter-spacing: 1.1pt;
+  font-size: 140%;
+  font-weight: 700;
+  color: var(--offwhite-text);
 }
 
 .categoryText {
@@ -300,7 +300,7 @@ input {
   height: 46px;
   padding: 12px 20px;
   margin: 8px 0;
-  border: 1px solid white;
+  border: 1px solid rgb(125, 124, 124);
   border-radius: 8px;
   font-family: "Source Sans Pro";
   font-size: 12pt;
@@ -311,7 +311,7 @@ textarea {
   height: 138px;
   padding: 12px 20px;
   margin: 8px 0;
-  border: 1px solid white;
+  border: 1px solid rgb(125, 124, 124);
   border-radius: 8px;
   font-family: "Source Sans Pro";
   font-size: 12pt;
@@ -319,23 +319,24 @@ textarea {
 }
 
 .formButton {
-  height: 46px;
-  padding: 12px 20px;
+  height: 38px;
+  width: 92px;
+  padding: 6px 20px;
   margin: 8px 0;
   border: 1px solid white;
   border-radius: 8px;
   font-family: "Source Sans Pro";
+  align-self: flex-end;
   font-size: 12pt;
   font-weight: 700;
   letter-spacing: 1.05px;
   color: white;
-  background: linear-gradient(90deg, rgba(0,180,214,1) 0%, rgba(255,0,227,1) 100%);
+  background:rgba(255,0,227,1);
 }
 
 .subText {
   font-family: var(--code-text);
   font-size: 6pt;
   color: white;
-  width: 80%;
-  margin: 0 auto;
+  align-self: flex-end;
 }
