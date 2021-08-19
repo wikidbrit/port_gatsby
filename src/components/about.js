@@ -30,7 +30,7 @@ export default function about() {
       <h3 className="display stuffIKnow">Stuff I Know</h3>
       <div className=" display iconSet">
         <svg
-          className="photoshop"
+          className="photoshop display"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 551.31132"
@@ -41,7 +41,7 @@ export default function about() {
           />
         </svg>
         <svg
-        className="css"
+        className="css display"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 551.31132"
@@ -52,7 +52,7 @@ export default function about() {
           />
         </svg>
         <svg
-        className="js"
+        className="js display"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 551.31132"
@@ -67,7 +67,7 @@ export default function about() {
 
 
         <svg
-          className="illustrator"
+          className="illustrator display"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 551.31132"

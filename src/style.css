@@ -49,7 +49,7 @@ h2 {
 }
 
 .display {
-  visibility: hidden;
+  display: none;
 }
 
 .paulText {

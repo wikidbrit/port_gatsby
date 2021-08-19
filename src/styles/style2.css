@@ -12,7 +12,7 @@
   }
 
   .display {
-    visibility: visible;
+    display: block;
   }
 
   h2 {
