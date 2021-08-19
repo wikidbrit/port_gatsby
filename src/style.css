@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   --offwhite-text: #EBF5F7;
@@ -9,6 +10,7 @@
   --header-text: "Poppins", sans-serif;
   --body-text: :"Source Sans Pro", sans-serif;
   --code-text: "Roboto Mono";
+  --fancy-text: 'Sansita Swashed', cursive;
 }
 
 * {
@@ -31,14 +33,31 @@ h1 {
   color: var(--offwhite-text);
   font-size: 190%;
   font-weight: 700;
+  font-style: italic;
   margin-left: 8%;
   line-height: 1.10em;
   text-align: left;
 }
 
-.paul {
-  line-height: 1.10em;
+h2 {
+  font-family: var(--header-text);
+  color: var(--offwhite-text);
+  font-size: 3.5vw;
   font-weight: 700;
+  letter-spacing: 0px;
+  font-style: italic;
+}
+
+.display {
+  visibility: hidden;
+}
+
+.paulText {
+  max-width: 80%;
+  align-self: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 1.10em;
 }
 
 .wrapper {
@@ -80,6 +99,7 @@ h1 {
   grid-column: 1/2;
   grid-row: 3/4;
 }
+
 .logoTop {
     align-self: center;
     position: absolute;
@@ -156,13 +176,11 @@ h2 {
   font-weight: bold;
 }
 
-.paul {
-  max-width: 80%;
-  align-self: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  text-shadow: 2px 6px 4px rgb(0 0 0 / 30%), 0px -5px 35px rgb(255 255 255 / 30%), 2px 1px 8px rgb(255 0 227 / 60%), -2px -1px 8px rgb(0 180 214 / 70%), -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  line-height: 1.10em;
+.paulImage {
+  height: auto;
+  width: 80%;
+  justify-self: center;
+  margin: 0 auto;
 }
 
 .aboutText {

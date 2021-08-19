@@ -17,13 +17,15 @@ export default function headerGrid() {
         </h1>
         <p className="innerTag code">{"</h1>"}</p>
       </div>
+
       <div className="buttonArea">
-        <p className="innerTag code">{"<button>"}</p>
+        <p className="buttonTag code">{"<button>"}</p>
         <a href="#contact" className="contactButton">
           CONTACT
         </a>
-        <p className="innerTag code">{"</button>"}</p>
+        <p className=" buttonTag code">{"</button>"}</p>
       </div>
+
       <Logo />
     </div>
   )
