@@ -12,7 +12,7 @@ export default function headerGrid() {
         <p className="innerTag code ">{"<h1>"}</p>
         <h1 className="landingText">
           Hey!<span className="wave"></span>
-          <br></br>I'm <span className="paul">Paul,</span>
+          <br></br>I'm <span className="paulText">Paul,</span>
           <br></br>a Web Developer<br></br>&amp; Designer.
         </h1>
         <p className="innerTag code">{"</h1>"}</p>
