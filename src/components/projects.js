@@ -2,10 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Spacer from "../components/spacer"
-import Line from '../components/line'
+import Line from "../components/line"
 
 export default function projects(props) {
   const posts = props.data.allContentfulProjects.edges
+
+  // const coverImageUrl = "https:" + posts.coverimage.file.url
 
   return (
     <div>
@@ -14,6 +16,7 @@ export default function projects(props) {
       <Spacer />
       <ol>
         {posts.map(post => {
+          console.log(post.node.coverimage.file.url)
           return (
             <li key={post.node.slug}>
               <article
@@ -21,19 +24,29 @@ export default function projects(props) {
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <header className="projectWrapper">
-                  <h2>
-                    <Link to={post.node.slug} itemProp="url">
+                <Link to={post.node.slug} itemProp="url">
+                  <div
+                    className="projectWrapper"
+                    style={{
+                      padding: "5px 25px",
+                      height: "80px",
+                      margin: "20px auto",
+                      backgroundImage:
+                        "url(https://" + post.node.coverimage.file.url + ")",
+                    }}
+                  >
+                    <h2>
                       <span className="projectTitle" itemProp="headline">
-                      <span className="projectArrow">► </span>{post.node.title}
+                        {post.node.title}
                       </span>
-                    </Link>
-                  </h2>
-                  <section>
+                    </h2>
+                    <p className="date">{post.node.createdAt}</p>
+                    {/* <section>
                     <p className="categoryText">{post.node.category}</p>
                     <p className="date">{post.node.createdAt}</p>
-                  </section>
-                </header>
+                  </section> */}
+                  </div>
+                </Link>
               </article>
             </li>
           )

@@ -1,7 +1,7 @@
 import React from "react"
 
 import Spacer from "../components/spacer"
-import Line from '../components/line'
+import Line from "../components/line"
 
 export default function form() {
   return (
@@ -37,7 +37,9 @@ export default function form() {
           minLength="20"
         />
         <p className="subText">You may expect a response within 24 hours.</p>
-        <button className="formButton" type="submit">SEND</button>
+        <button className="formButton" type="submit">
+          SEND
+        </button>
       </form>
     </div>
   )

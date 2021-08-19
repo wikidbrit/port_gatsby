@@ -7,12 +7,9 @@ import Footer from "../components/footer"
 import About from "../components/about"
 import Spacer from "../components/spacer"
 import Projects from "../components/projects"
-import Form from '../components/form'
-
-
+import Form from "../components/form"
 
 const BlogIndex = ({ data }) => {
-
   return (
     <div>
       <Seo title="All posts" />
@@ -20,7 +17,7 @@ const BlogIndex = ({ data }) => {
       <Spacer />
       <About />
       <Spacer />
-      <Projects data={data}/>
+      <Projects id="projects" data={data} />
       <Spacer />
       <Form />
       <Spacer />
@@ -40,6 +37,13 @@ export const pageQuery = graphql`
           title
           category
           createdAt(formatString: "de MMMM, YYYY")
+          coverimage {
+            id
+            file {
+              url
+              fileName
+            }
+          }
         }
       }
     }

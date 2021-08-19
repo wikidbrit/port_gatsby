@@ -1,10 +1,9 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Spacer from "../components/spacer"
 import Footer from "../components/footer"
 
 const BlogPostContentfulTemplate = ({ data, location }) => {
-
   const post = data.allContentfulProjects.edges[0].node
   const siteTitle = data.allContentfulProjects?.title || "Title"
   const coverImageUrl = "https:" + post.coverimage.file.url
@@ -26,25 +25,53 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
       <Spacer />
       <h1>{post.title}</h1>
       <Spacer />
-      <p dangerouslySetInnerHTML={{ __html: overviewText }} />
+      <p
+        className="overviewText templateText"
+        dangerouslySetInnerHTML={{ __html: overviewText }}
+      />
       <Spacer />
-      <img className="image1" alt={image1Alt} src={image1Url}></img>
+      <img
+        className="image1 templateImage"
+        alt={image1Alt}
+        src={image1Url}
+      ></img>
       <Spacer />
-      <h2>Our Solution</h2>
+      <h2 className="templateHeader">Our Solution</h2>
       <Spacer />
-      <p dangerouslySetInnerHTML={{ __html: solutionText }} />
+      <p
+        className="solutionText templateText"
+        dangerouslySetInnerHTML={{ __html: solutionText }}
+      />
       <Spacer />
-      <img className="image2" alt={image2Alt} src={image2Url}></img>
+      <img
+        className="image2 templateImage"
+        alt={image2Alt}
+        src={image2Url}
+      ></img>
       <Spacer />
-      <h2>My Role</h2>
+      <h2 className="templateHeader">My Role</h2>
       <Spacer />
-      <p dangerouslySetInnerHTML={{ __html: roleText }} />
+      <p
+        className="roleText templateText"
+        dangerouslySetInnerHTML={{ __html: roleText }}
+      />
       <Spacer />
-      <img className="image3" alt={image3Alt} src={image3Url}></img>
+      <img
+        className="image3 templateImage"
+        alt={image3Alt}
+        src={image3Url}
+      ></img>
       <Spacer />
-      <h2>Conclusion</h2>
+      <h2 className="templateHeader">Conclusion</h2>
       <Spacer />
-      <p dangerouslySetInnerHTML={{ __html: conclusionText }} />
+      <p
+        className="conclusionText templateText"
+        dangerouslySetInnerHTML={{ __html: conclusionText }}
+      />
+      <Spacer />
+      <Link className="return" to="/" itemProp="url">
+        Return
+      </Link>
       <Spacer />
       <Footer />
     </div>
