@@ -18,12 +18,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  background: linear-gradient(45deg, #0C303F, #400F41);
-  background-size: cover;
-  width: 100vw;
-}
-
 a {
   text-decoration: none;
 }
@@ -72,7 +66,6 @@ h1 {
 
 .landingRight {
   display: flex;
-  align-content: center;
   width: 100vw;
   z-index: 8;
   grid-column: 1/2;
@@ -80,6 +73,7 @@ h1 {
   align-self: center;
   justify-self: center;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .headerTextGrid {
@@ -88,60 +82,35 @@ h1 {
 }
 .logoTop {
     align-self: center;
+    position: absolute;
     z-index: 7;
-    height: 140vw;
-    transform: translate(-15%, 0%);
-    mix-blend-mode: overlay;
+    height: 130vw;
+    max-height: 700px;
+    transform: translate(0%, 0%);
+    z-index: 3;
 }
 
-/* .blurGradient {
-  z-index: 6;
+.angledMiddle {
+  align-self: center;
   position: absolute;
-  filter: blur(15px);
-  mix-blend-mode: hard-light;
-  opacity: 95%;
-  height: 120vw;
-  transform: translate(-5%, -10%) rotate(-14.53deg);
-}
-
-.outlineMiddle {
-  position: absolute;
-  z-index: 5;
-  height: 115vw;
-  transform: translate(3%, -2%) rotate(-21deg);
-} */
-
-/* .logoMiddle {
-  z-index: 4;
-  position: absolute;
+  z-index: 7;
+  height: 130vw;
+  max-height: 700px;
+  transform: translate(0%, 0%);
   mix-blend-mode: overlay;
-  height: 100vw;
-  transform: translate(5%, 5%) rotate(-24deg);
-}
-
-.logoBottom {
+  opacity: 1;
   z-index: 2;
-  position: absolute;
-  height: 100vw;
-  transform: translate(10%, 10%);
-} */
-
-/* .outlineBottom {
-  position: absolute;
-  z-index: 3;
-  height: 110vw;
-  transform: translate(11%, 5%) rotate(-25.66deg);
 }
 
-.blurGradient2 {
-  z-index: 1;
+.angledBottom {
+  align-self: center;
   position: absolute;
-  filter: blur(15px);
-  mix-blend-mode: hard-light;
-  opacity: 95%;
-  height: 110vw;
-  transform: translate(11%, 5%) rotate(-25.66deg);
-} */
+  z-index: 7;
+  height: 130vw;
+  max-height: 700px;
+  transform: translate(0%, 0%);
+  z-index: 1;
+}
 
 .buttonArea {
   grid-column: 1/2;
@@ -168,7 +137,6 @@ h1 {
 }
 
 .spacer {
-  background-color: #EBF5F7;
   opacity: 0;
   height: 40px;
 }

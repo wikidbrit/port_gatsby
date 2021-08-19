@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql, Link } from "gatsby"
 import Spacer from "../components/spacer"
 import Footer from "../components/footer"
+import Background from "../components/background"
 
 const BlogPostContentfulTemplate = ({ data, location }) => {
   const post = data.allContentfulProjects.edges[0].node
@@ -69,11 +70,12 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
         dangerouslySetInnerHTML={{ __html: conclusionText }}
       />
       <Spacer />
-      <Link className="return" to="/" itemProp="url">
+      <Link className="return" to="/#projects" itemProp="url">
         Return
       </Link>
       <Spacer />
       <Footer />
+      <Background />
     </div>
   )
 }

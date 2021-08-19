@@ -8,11 +8,13 @@ import About from "../components/about"
 import Spacer from "../components/spacer"
 import Projects from "../components/projects"
 import Form from "../components/form"
+import Background from "../components/background"
 
 const BlogIndex = ({ data }) => {
   return (
     <div>
       <Seo title="All posts" />
+
       <HeaderGrid />
       <Spacer />
       <About />
@@ -21,7 +23,9 @@ const BlogIndex = ({ data }) => {
       <Spacer />
       <Form />
       <Spacer />
+      <Background/>
       <Footer />
+
     </div>
   )
 }

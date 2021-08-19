@@ -6,7 +6,7 @@ import Line from '../components/line'
 
 export default function about() {
     return (
-        <div className="aboutWrapper">
+        <div id="about" className="aboutWrapper">
             <h2 className="whoIAm percent">Who I am</h2>
             <Line />
             <img className="paul" src={ProfileImage} alt="Paul Fleming Posing in a Circle"></img>

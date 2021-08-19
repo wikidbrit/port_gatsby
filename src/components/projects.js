@@ -10,7 +10,7 @@ export default function projects(props) {
   // const coverImageUrl = "https:" + posts.coverimage.file.url
 
   return (
-    <div>
+    <div id="projects">
       <h2 className="percent">Projects</h2>
       <Line />
       <Spacer />
