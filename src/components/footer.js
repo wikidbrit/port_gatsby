@@ -4,7 +4,7 @@ export default function footer() {
   return (
     <footer>
       <div className="footwrap percent">
-        <a href="https://github.com/wikidbrit" target="_blank" rel="noreferrer">
+        <a href="https://github.com/wikidbrit/port_gatsby" target="_blank" rel="noreferrer">
           GitHub /
         </a>
         <p> </p>

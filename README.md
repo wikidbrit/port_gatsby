@@ -36,6 +36,10 @@ Care to see the deployed site? [You will soon be able to view here](https://www.
 4. Animations!!
 5. CMS content needs to be added and I need to narrow down the projects I plan to show.
 6. Clean the repo some to remove the placeholder assets provided by Gatsby.
+
+<p align="center">
+    <img alt="Logo" src="src/images/fulllogo-12.png" width="80" />
+</p>
 <!-- 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
