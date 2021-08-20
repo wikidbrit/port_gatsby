@@ -10,6 +10,7 @@ import Projects from "../components/projects"
 import Form from "../components/form"
 import Background from "../components/background"
 
+
 const BlogIndex = ({ data }) => {
   return (
     <div>
