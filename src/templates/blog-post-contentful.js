@@ -48,7 +48,7 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
         src={image1Url}
       ></img>
       <Spacer />
-      <h2 className="templateHeader">Solution</h2>
+      <h2 className="templateHeader solution">Solution</h2>
       <Spacer />
       <p
         className="solutionText templateText"

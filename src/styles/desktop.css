@@ -245,6 +245,11 @@
     align-self: center;
   }
 
+  .circleImage {
+    height: 40vw;
+    width: auto;
+  }
+
   .pcode {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -433,7 +438,7 @@
   }
 
   .templateText {
-    max-width: 70%;
+    max-width: 100%;
     margin: 70px 0 70px 8%;
     color: var(--offwhite-text);
     font-family: "Source Sans Pro";
@@ -443,6 +448,13 @@
   .overviewText {
     grid-column: 1/2;
     justify-self: right;
+  }
+
+  .solution {
+    grid-column: 1/3;
+    width: 85%;
+    text-align: center;
+    margin-left: 0;
   }
 
   .solutionText {
