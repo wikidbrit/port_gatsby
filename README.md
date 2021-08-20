@@ -1,47 +1,42 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+    <img alt="Logo" src="src/images/fulllogo-12.png" width="80" />
 </p>
 <h1 align="center">
-  Gatsby's blog starter
+  Paul Fleming Portfolio Page
 </h1>
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Welcome to the repo for my personal portfolio page. This is my first real page to showcase the work/learning I have been doing at Hyper Island and beyond. My intention is to continue to improve and refine the page as I learn more and grow more confident in wed development.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+Care to see the deployed site? [You will soon be able to view here](https://www.gatsbyjs.com/docs/gatsby-starters/).
+## 🔧 The Process
 
-## 🚀 Quick start
+1.  **First Steps**
 
-1.  **Create a Gatsby site.**
+    I started with logo development based around some ideas and inspiration I had found. This process had me developing multiple logos, and creating multiple pages (not sure if I hid all the repos they are contained in). I finally settled on the idea towards the first half of 2021 and began the process of developing the design soon after. 
+    <br>
+2.  **Creating the Design**
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the blog starter.
+    I created most of the logo assets and design guide in Adobe Illustrator, settling on the color pallette and font choices. These evolved some from the initial design but was mostly settled on early. <br>
+    <img alt="Logo" src="src/images/screenshot1.png" width="276" /><br>
+    After the initial design stage I went into Figma and created the overall layout and created some simple rules to follow. This is always a key step for me so I can think less about the design and more troubleshooting when developing. <br>
+    <img alt="Logo" src="src/images/screenshot2.png" width="276" />
 
-    ```shell
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
-    ```
+3.  **Developing The Page**
 
-1.  **Start developing.**
+    In the pursuit of learning I decided I wanted to use a headless CMS with Gatsby to create the page. I decided to go with the blog starter and quickly started deleting everything. I developed this site mobile first, which was the first for me. It helped speed up the development of the desktop site dramatically. <br>
+    Contentful was my CMS of choice as I had used it before on a school project you can [view here](https://github.com/wikidbrit/c_c-Ricola) for Ricola. That at least gave me some familiarity with the site and how to integrate it into my page. <br>
+    It has been a real learning experience and frankly struggle to get to this point and the project continues to grow as I learn more and more. 
 
-    Navigate into your new site’s directory and start it up.
+## 🚗 Whats Coming Next
 
-    ```shell
-    cd my-blog-starter/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🚀 Quick start (Gatsby Cloud)
-
+1. I need to make mockups for the portfolio projects. Those will be added to the CMS soon.
+2. I would like to render buttons depending on if the information is available from the CMS. I have the basis of that figured out. 
+3. There is more styling required for the project pages.
+4. Animations!!
+5. CMS content needs to be added and I need to narrow down the projects I plan to show.
+6. Clean the repo some to remove the placeholder assets provided by Gatsby.
+<!-- 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-blog)
@@ -102,4 +97,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+AUTO-GENERATED-CONTENT:END -->
