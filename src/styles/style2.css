@@ -11,6 +11,11 @@
     text-align: left;
   }
 
+  body {
+    max-width: 1580px;
+    margin: 0 auto;
+  }
+
   .display {
     display: block;
   }
@@ -73,24 +78,22 @@
 
   .landingRight {
     position: relative;
-    grid-column:2 /3 ;
+    grid-column: 2 /3;
     height: 100%;
     width: 100%;
     margin-top: 13%;
-    overflow: visible;
   }
 
   .landingLeft {
     grid-column: 1/2;
   }
 
-  .logoTop {
+  .angledTop {
     align-self: center;
     position: absolute;
     z-index: 7;
-    height: 150vw;
-    max-height: 800px;
-    transform: translate(0%, 5%);
+    max-height: 750px;
+    transform: translate(-5%, 5%);
     z-index: 3;
   }
 
@@ -98,9 +101,8 @@
     align-self: center;
     position: absolute;
     z-index: 7;
-    height: 150vw;
-    max-height: 800px;
-    transform: translate(0%, 5%);
+    max-height: 750px;
+    transform: translate(-5%, 5%);
     mix-blend-mode: overlay;
     opacity: 1;
     z-index: 2;
@@ -110,9 +112,8 @@
     align-self: center;
     position: absolute;
     z-index: 7;
-    height: 150vw;
-    max-height: 800px;
-    transform: translate(0%, 5%);
+    max-height: 750px;
+    transform: translate(-5%, 5%);
     z-index: 1;
   }
 
@@ -121,9 +122,10 @@
   .wrapper {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
-    grid-template-rows: 10vh 1fr 1fr;
+    grid-template-rows: 10vh 1fr 20vh;
     height: 100vh;
     margin-bottom: 20px;
+    overflow-y: visible;
   }
 
   .section_1 {
@@ -135,7 +137,7 @@
   .headerTextGrid {
     grid-column: 1/2;
     grid-row: 2/3;
-    align-self: flex-start;
+    align-self: center;
   }
 
   .buttonArea {
@@ -145,6 +147,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 5%;
+    margin-bottom: 0;
     width: 100%;
   }
 
@@ -160,7 +163,7 @@
     font-weight: 300;
     letter-spacing: 1.05px;
     color: white;
-    background: #196DB6;
+    background: #196db6;
     border-radius: 3px;
   }
 
@@ -194,7 +197,7 @@
   }
 
   .paulImage {
-    height: 75vh;
+    height: 170%;
     width: auto;
     justify-self: center;
   }
@@ -222,7 +225,7 @@
     grid-column: 2/3;
     grid-row: 3/4;
     color: var(--offwhite-text);
-    font-size: 2.0vw;
+    font-size: 2vw;
     align-self: flex-start;
   }
 
@@ -236,6 +239,43 @@
     width: 70%;
     height: 55%;
   }
+
+  .icon {
+    fill: var(--offwhite-text);
+    transition: transform 200ms ease-in-out;
+    transition: filter 300ms ease-in-out;
+  }
+
+  .icon:hover {
+    transform: scale(1.2, 1.2);
+    filter: drop-shadow(-2px 2px 5px #FF00E3) drop-shadow(2px -2px 5px #00B4D6);
+  }
+
+  /* Projects */
+
+  .projectHeader {
+    margin-left: 8%;
+  }
+
+  .projectWrapper {
+    max-width: 65%;
+  }
+
+  /* Form */
+
+  .formHeader {
+    margin: 0 auto;
+    width: 960px;
+    text-align: center;
+  }
+
+  .formBox {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+  }
+  
 
   /* Footer */
 

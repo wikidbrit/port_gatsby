@@ -11,14 +11,14 @@ export default function projects(props) {
 
   return (
     <div id="projects">
-      <h2 className="percent">Projects</h2>
+      <h2 className="percent projectHeader">Projects</h2>
       <Line />
       <Spacer />
       <ol>
         {posts.map(post => {
           console.log(post.node.coverimage.file.url)
           return (
-            <li key={post.node.slug}>
+            <li className="list" key={post.node.slug}>
               <article
                 className="post-list-item"
                 itemScope
@@ -41,10 +41,6 @@ export default function projects(props) {
                       </span>
                     </h2>
                     <p className="date">{post.node.createdAt}</p>
-                    {/* <section>
-                    <p className="categoryText">{post.node.category}</p>
-                    <p className="date">{post.node.createdAt}</p>
-                  </section> */}
                   </div>
                 </Link>
               </article>

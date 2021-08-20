@@ -6,7 +6,7 @@ import Line from "../components/line"
 export default function form() {
   return (
     <div id="contact" className="formContainer">
-      <h2 className="percent">Reach Out</h2>
+      <h2 className="percent formHeader">Reach Out</h2>
       <Line />
       <Spacer />
       <form
