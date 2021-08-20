@@ -7,9 +7,9 @@ import AngledBottom from "../images/angledBottom.png"
 export default function logo() {
   return (
     <div className="landingRight">
-      <img className="angledTop" src={AngledTop}></img>
-      <img className="angledMiddle" src={AngledMiddle}></img>
-      <img className="angledBottom" src={AngledBottom}></img>
+      <img className="angledTop" alt={" "} src={AngledTop}></img>
+      <img className="angledMiddle" alt={" "} src={AngledMiddle}></img>
+      <img className="angledBottom" alt={" "} src={AngledBottom}></img>
     </div>
   )
 }

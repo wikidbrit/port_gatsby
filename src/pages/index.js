@@ -13,8 +13,7 @@ import Background from "../components/background"
 const BlogIndex = ({ data }) => {
   return (
     <div>
-      <Seo title="All posts" />
-
+      <Seo title="Home" />
       <HeaderGrid />
       <Spacer />
       <About />
@@ -25,7 +24,6 @@ const BlogIndex = ({ data }) => {
       <Spacer />
       <Background/>
       <Footer />
-
     </div>
   )
 }

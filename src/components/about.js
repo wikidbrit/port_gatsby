@@ -1,33 +1,45 @@
 import React from "react"
 import Spacer from "../components/spacer"
 
-import "../styles/style2.css"
+import "../styles/desktop.css"
 import ProfileImage from "../images/profileimage2.png"
-import Line from "../components/line"
 
 export default function about() {
   return (
     <div id="about" className="aboutWrapper">
-      <h2 className="whoIAm percent">Who I am</h2>
+      <div className="whoIAm ">
+      <span className="code h2code2 top">{"<h2>"}</span>
+        <h2 className="percent wiaH2">Who I am</h2>
+        <span className="code h2code2 bottom">{"</h2>"}</span>
+      </div>
       <Spacer />
-      <img
-        className="paulImage"
-        src={ProfileImage}
-        alt="Paul Fleming Posing in a Circle"
-      ></img>
+      <div className="paulImage">
+      <span className="h2code code Top">{"<img src={superCoolGuy}>"}</span>
+        <img className="circleImage" src={ProfileImage} alt="Paul Fleming Posing in a Circle"></img>
+        <span className="h2code code Top">{"</img>"}</span>
+      </div>
       <Spacer />
-      <p className="aboutText">
-        I am a Digital Designer and aspiring Front End Developer currently
-        studying in Stockholm, Sweden.
-        <br></br>
-        <br></br>I am a self driven and motivated to learn more about the skills
-        needed to be not only successful, but a leader in this industry.
-        <br></br>
-        <br></br>
-        My hobbies include watching science fiction, skateboarding, cycling, and
-        following the aerospace industry.{" "}
-      </p>
-      <h3 className="display stuffIKnow">Stuff I Know</h3>
+      <div className="aboutText">
+        <span className="code pcode">{"<p src={interestingText}>"}</span>
+        <p>
+          I am a Digital Designer and aspiring Front End Developer currently
+          studying in Stockholm, Sweden.
+          <br></br>
+          <br></br>I am a self driven and motivated to learn more about the
+          skills needed to be not only successful, but a leader in this
+          industry.
+          <br></br>
+          <br></br>
+          My hobbies include watching science fiction, skateboarding, cycling,
+          and following the aerospace industry.{" "}
+        </p>
+        <span className="code pcode2">{"<p>"}</span>
+      </div>
+      <div className="stuffIKnow display">
+        <span className="code top sik1">{"<h3>"}</span>
+        <h3>Stuff I Know</h3>
+        <span className="code sik2 bottom">{"</h3>"}</span>
+      </div>
       <div className=" display iconSet">
         <svg
           className="photoshop display icon"

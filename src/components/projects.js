@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Spacer from "../components/spacer"
 import Line from "../components/line"
 
+import '../styles/desktop.css'
+
 export default function projects(props) {
   const posts = props.data.allContentfulProjects.edges
 
@@ -11,14 +13,19 @@ export default function projects(props) {
 
   return (
     <div id="projects">
-      <h2 className="percent projectHeader">Projects</h2>
+      <div className="percent projectHeader">
+        <p className=" buttonTag code">{"<h2>"}</p>
+        <h2 className="twoper">Projects</h2>
+        <p className=" buttonTag code">{"</h2>"}</p>
+      </div>
+
       <Line />
       <Spacer />
       <ol>
         {posts.map(post => {
-          console.log(post.node.coverimage.file.url)
           return (
             <li className="list" key={post.node.slug}>
+              <p className=" article code">{"<article>"}</p>
               <article
                 className="post-list-item"
                 itemScope
@@ -44,6 +51,7 @@ export default function projects(props) {
                   </div>
                 </Link>
               </article>
+              <p className="article code">{"</article>"}</p>
             </li>
           )
         })}

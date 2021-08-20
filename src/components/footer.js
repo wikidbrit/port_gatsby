@@ -1,11 +1,8 @@
 import React from "react"
 
-import Line from "../components/line"
-
 export default function footer() {
   return (
     <footer>
-        <Line />
       <div className="footwrap percent">
         <a href="https://github.com/wikidbrit" target="_blank" rel="noreferrer">
           GitHub /

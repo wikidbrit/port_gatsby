@@ -4,6 +4,8 @@ import Spacer from "../components/spacer"
 import Footer from "../components/footer"
 import Background from "../components/background"
 
+import "../style.css"
+
 const BlogPostContentfulTemplate = ({ data, location }) => {
   const post = data.allContentfulProjects.edges[0].node
   const siteTitle = data.allContentfulProjects?.title || "Title"
@@ -20,11 +22,20 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
   const roleText = post.roletext.internal.content
   const conclusionText = post.conclusion.internal.content
 
+  // const GitHubIcon;
+
+  // if(post.githublink) {
+  //   GitHubIcon = (
+  //     <img src={}></img>
+  //   )
+  // }
+
   return (
-    <div id="blogPost" location={location} title={siteTitle}>
+    <div location={location} title={siteTitle}>
+      <div  id="blogPost" >
       <img className="coverImage" alt={coverImageAlt} src={coverImageUrl}></img>
       <Spacer />
-      <h1>{post.title}</h1>
+      <h1 className="templateh1">{post.title}</h1>
       <Spacer />
       <p
         className="overviewText templateText"
@@ -37,7 +48,7 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
         src={image1Url}
       ></img>
       <Spacer />
-      <h2 className="templateHeader">Our Solution</h2>
+      <h2 className="templateHeader">Solution</h2>
       <Spacer />
       <p
         className="solutionText templateText"
@@ -62,18 +73,17 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
         alt={image3Alt}
         src={image3Url}
       ></img>
-      <Spacer />
-      <h2 className="templateHeader">Conclusion</h2>
-      <Spacer />
+      <Spacer/>
+      <h2 className="templateHeader conclusion">Conclusion</h2>
+      <Spacer className="deskHidden" />
       <p
         className="conclusionText templateText"
         dangerouslySetInnerHTML={{ __html: conclusionText }}
       />
-      <Spacer />
       <Link className="return" to="/#projects" itemProp="url">
         Return
       </Link>
-      <Spacer />
+      </div>
       <Footer />
       <Background />
     </div>
