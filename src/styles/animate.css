@@ -1,7 +1,9 @@
 .background {
   width: 100vw;
   height: 100vh;
-  color: #fff;
+  color: white;
+  background-blend-mode: overlay;
+  background-color: white;
   background: linear-gradient(45deg, #0C303F, #400F41, #0C303F, #400F41);
   background-size: 500% 500%;
   -webkit-animation: Gradient 20s ease infinite;

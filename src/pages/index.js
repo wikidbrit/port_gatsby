@@ -13,11 +13,12 @@ import Nav from '../components/nav'
 
 
 const BlogIndex = ({ data }) => {
+
   return (
     <div>
       <Seo title="Home" />
       <Nav />
-      <div style={{marginLeft:'20px'}}>
+      <div style={{marginLeft:'62px'}}>
       <HeaderGrid />
       <Spacer />
       <About />

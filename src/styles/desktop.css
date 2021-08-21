@@ -61,11 +61,12 @@
   }
 
   .outerTag {
-    margin-left: 5%;
+    margin-left: 2%;
+    margin-bottom: 10px;
   }
 
   .bodyTag {
-    margin-left: 5.5%;
+    margin-left: 4%;
   }
 
   .innerTag {
@@ -99,42 +100,16 @@
 
   /* Logo Cover */
 
-  .landingRight {
+  /* .landingRight {
     position: relative;
     grid-column: 2 /3;
     height: 100%;
     width: 100%;
     margin-top: 13%;
-  }
+  } */
 
   .landingLeft {
     grid-column: 1/2;
-  }
-
-  .angledTop {
-    align-self: center;
-    position: absolute;
-    max-height: 750px;
-    transform: translate(-5%, 5%);
-    z-index: 3;
-  }
-
-  .angledMiddle {
-    align-self: center;
-    position: absolute;
-    max-height: 750px;
-    transform: translate(-5%, 5%);
-    mix-blend-mode: overlay;
-    opacity: 1;
-    z-index: 2;
-  }
-
-  .angledBottom {
-    align-self: center;
-    position: absolute;
-    max-height: 750px;
-    transform: translate(-5%, 5%);
-    z-index: 1;
   }
 
   /* Landing Grid */
@@ -618,12 +593,13 @@
     height: 100vh;
     /* border-radius: 0 50px 50px 0; */
     position: fixed;
-    background-color: rgba(18, 18, 18, 0.7);
+    background-color: rgba(18, 18, 18, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
       rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
       rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    border-radius: 0 50px 50px 0;
+    border-radius: 0 50px 0px 0;
     transition: width 300ms ease;
+    mix-blend-mode: luminosity;
   }
 
   .navList {
@@ -669,18 +645,27 @@
     opacity: 1;
   }
 
-  .navItem:hover {
-    background-color: rgba(18, 18, 18, 0.6);
+  .navItem:hover {box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: rgba(18, 18, 18, 0.5);
+  }
+
+  .navItem:active {
+    background-color: rgba(50,50,50,0.5);
   }
 
   .ulIcon {
     fill: white;
+    mix-blend-mode: normal;
     transition: 200ms;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
 
   .navItem:hover .ulIcon {
     fill: rgb(255, 0, 227);
+  }
+
+  .navItem:active .ulIcon {
+    fill: rgb(0, 180, 214)
   }
 
   .navBar:hover {
