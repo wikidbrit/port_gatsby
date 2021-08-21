@@ -6,10 +6,10 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   siteMetadata: {
-    title: `Paul Fleming Portfolio`,
+    title: `Paul Fleming's Portfolio`,
     author: {
       name: `Paul Fleming`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: ``,
     },
     description: `My portfolio page to learn more about me, Paul Fleming! Here I include projects I have completed and designs currently in progress.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,

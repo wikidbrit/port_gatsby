@@ -9,22 +9,25 @@ import Spacer from "../components/spacer"
 import Projects from "../components/projects"
 import Form from "../components/form"
 import Background from "../components/background"
+import Nav from '../components/nav'
 
 
 const BlogIndex = ({ data }) => {
   return (
     <div>
       <Seo title="Home" />
+      <Nav />
+      <div style={{marginLeft:'20px'}}>
       <HeaderGrid />
       <Spacer />
       <About />
-      <Spacer />
       <Projects id="projects" data={data} />
       <Spacer />
       <Form />
       <Spacer />
       <Background/>
       <Footer />
+      </div>
     </div>
   )
 }

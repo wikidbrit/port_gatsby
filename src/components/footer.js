@@ -13,21 +13,21 @@ export default function footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={GitHubIcon} style={{height:'30px', margin:'5px'}}></img>
+          <img alt="Link to Git hub Profile" src={GitHubIcon} style={{height:'30px', margin:'5px'}}></img>
         </a>
         <a
           href="https://www.instagram.com/pfwikid/"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={InstagramIcon} style={{height:'30px', margin:'5px'}}></img>
+          <img alt="link to instagram account" src={InstagramIcon} style={{height:'30px', margin:'5px'}}></img>
         </a>
         <a
           href="https://www.linkedin.com/in/pflemingonline/"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={LinkedInIcon} style={{height:'30px', margin:'5px'}}></img>
+          <img alt="link to linked in account" src={LinkedInIcon} style={{height:'30px', margin:'5px'}}></img>
         </a>
       </div>
       <p className="percent">© 2021 Paul Fleming</p>

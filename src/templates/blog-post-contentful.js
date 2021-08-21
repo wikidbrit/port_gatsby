@@ -1,14 +1,14 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
-import Spacer from "../components/spacer"
+
 import Footer from "../components/footer"
 import Background from "../components/background"
-
-import "../style.css"
+import Seo from "../components/seo"
+import Nav from '../components/nav'
 
 const BlogPostContentfulTemplate = ({ data, location }) => {
   const post = data.allContentfulProjects.edges[0].node
-  const siteTitle = data.allContentfulProjects?.title || "Title"
+  // const siteTitle = data.allContentfulProjects?.title || "Title"
   const coverImageUrl = "https:" + post.coverimage.file.url
   const coverImageAlt = post.coverimage.file.filename
   const overviewText = post.overview.internal.content
@@ -31,58 +31,91 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
   // }
 
   return (
-    <div location={location} title={siteTitle}>
-      <div  id="blogPost" >
-      <img className="coverImage" alt={coverImageAlt} src={coverImageUrl}></img>
-      <Spacer />
-      <h1 className="templateh1">{post.title}</h1>
-      <Spacer />
-      <p
-        className="overviewText templateText"
-        dangerouslySetInnerHTML={{ __html: overviewText }}
-      />
-      <Spacer />
-      <img
-        className="image1 templateImage"
-        alt={image1Alt}
-        src={image1Url}
-      ></img>
-      <Spacer />
-      <h2 className="templateHeader solution">Solution</h2>
-      <Spacer />
-      <p
-        className="solutionText templateText"
-        dangerouslySetInnerHTML={{ __html: solutionText }}
-      />
-      <Spacer />
-      <img
-        className="image2 templateImage"
-        alt={image2Alt}
-        src={image2Url}
-      ></img>
-      <Spacer />
-      <h2 className="templateHeader">My Role</h2>
-      <Spacer />
-      <p
-        className="roleText templateText"
-        dangerouslySetInnerHTML={{ __html: roleText }}
-      />
-      <Spacer />
-      <img
-        className="image3 templateImage"
-        alt={image3Alt}
-        src={image3Url}
-      ></img>
-      <Spacer/>
-      <h2 className="templateHeader conclusion">Conclusion</h2>
-      <Spacer className="deskHidden" />
-      <p
-        className="conclusionText templateText"
-        dangerouslySetInnerHTML={{ __html: conclusionText }}
-      />
-      <Link className="return" to="/#projects" itemProp="url">
-        Return
-      </Link>
+    <div location={location}>
+      <Seo title={post.title} />
+      <Nav style={{zIndex:'1'}}/>
+      <div id="blogPost" style={{zIndex:'0'}}>
+        <img
+          className="coverImage"
+          alt={coverImageAlt}
+          src={coverImageUrl}
+        ></img>
+
+        <div className="templateHeaderText">
+          <p className=" templateCode buttonTag code">{"<h1>"}</p>
+          <h1 className="templateh1">{post.title}</h1>
+          
+          <p className=" templateCode buttonTag code">{"</h1>"}</p>
+          
+        </div>
+
+
+        <div className="overviewText ">
+          <p className=" templateCodeBody right buttonTag code">{"<p>"}</p>
+
+          <p
+            className="templateText o1"
+            dangerouslySetInnerHTML={{ __html: overviewText }}
+          />
+          <p className=" templateCodeBody right buttonTag code">{"</p>"}</p>
+        </div>
+
+        <img
+          className="image1 templateImage"
+          alt={image1Alt}
+          src={image1Url}
+        ></img>
+
+        <h2 className="templateHeader solution">Solution</h2>
+
+        <div className="solutionText ">
+          <p className=" templateCodeBody buttonTag code">{"<p>"}</p>
+          <p
+            className="templateText"
+            dangerouslySetInnerHTML={{ __html: solutionText }}
+          />
+          <p className=" templateCodeBody buttonTag code">{"</p>"}</p>
+        </div>
+        <img
+          className="image2 templateImage"
+          alt={image2Alt}
+          src={image2Url}
+        ></img>
+
+        <h2 className="templateHeader role">My Part</h2>
+        <div className="roleText">
+          <p className=" templateCodeBody buttonTag code">{"<p>"}</p>
+
+          <p
+            className="templateText o1"
+            dangerouslySetInnerHTML={{ __html: roleText }}
+          />
+          <p className=" templateCodeBody buttonTag code">{"</p>"}</p>
+        </div>
+        <img
+          className="image3 templateImage"
+          alt={image3Alt}
+          src={image3Url}
+        ></img>
+        <div className=" conclusion">
+          <p className=" templateCode buttonTag code">{"<h2>"}</p>
+          <h2 className="conHeader">To Sum It Up</h2>
+          <p className=" templateCode buttonTag code">{"</h2>"}</p>
+          <p className=" templateCode buttonTag code">{"<p>"}</p>
+
+          <p
+          className="conBody templateText"
+          dangerouslySetInnerHTML={{ __html: conclusionText }}
+        />          <p className=" templateCode buttonTag code">{"</p>"}</p>
+
+        </div>
+        
+
+
+
+        <Link className="return" to="/#projects" itemProp="url">
+          Return
+        </Link>
       </div>
       <Footer />
       <Background />

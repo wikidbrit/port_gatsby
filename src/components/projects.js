@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Spacer from "../components/spacer"
 import Line from "../components/line"
 
-import '../styles/desktop.css'
 
 export default function projects(props) {
   const posts = props.data.allContentfulProjects.edges

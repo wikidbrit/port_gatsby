@@ -8,14 +8,18 @@ export default function about() {
   return (
     <div id="about" className="aboutWrapper">
       <div className="whoIAm ">
-      <span className="code h2code2 top">{"<h2>"}</span>
+        <span className="code h2code2 top">{"<h2>"}</span>
         <h2 className="percent wiaH2">Who I am</h2>
         <span className="code h2code2 bottom">{"</h2>"}</span>
       </div>
       <Spacer />
       <div className="paulImage">
-      <span className="h2code code Top">{"<img src={superCoolGuy}>"}</span>
-        <img className="circleImage" src={ProfileImage} alt="Paul Fleming Posing in a Circle"></img>
+        <span className="h2code code Top">{"<img src={superCoolGuy}>"}</span>
+        <img
+          className="circleImage"
+          src={ProfileImage}
+          alt="Paul Fleming Posing in a Circle"
+        ></img>
         <span className="h2code code Top">{"</img>"}</span>
       </div>
       <Spacer />
@@ -40,9 +44,10 @@ export default function about() {
         <h3>Stuff I Know</h3>
         <span className="code sik2 bottom">{"</h3>"}</span>
       </div>
+
       <div className=" display iconSet">
         <svg
-          className="photoshop display icon"
+          className="html display icon"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 551.31132"
@@ -52,6 +57,7 @@ export default function about() {
             d="M105.11247,99.85432,131.48454,406.19,249.8239,440.21382l118.65649-34.07251,26.407-306.287Zm234.75806,72.704L338.216,191.60591l-.72754,8.4364H249.86321v-.00037H198.68205l3.30982,38.4729h47.87134V238.514h84.3269l-.89209,10.08947-8.52051,98.91065-.54,6.34521-74.24365,21.32032v.00134l-.16406.04871-74.31592-21.36988-5.08179-58.97949h36.4187l2.58155,29.96411,40.39746,11.29248.03345-.00989v-.00256l40.46753-11.30517,4.2019-48.73218H249.99431v.00073H168.81267l-8.9082-103.52954-.86866-10.08936H340.73943Z"
           />
         </svg>
+
         <svg
           className="css display icon"
           data-name="Layer 1"
