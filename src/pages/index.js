@@ -18,11 +18,12 @@ const BlogIndex = ({ data }) => {
     <div>
       <Seo title="Home" />
       <Nav />
-      <div style={{marginLeft:'62px'}}>
+      <div className="navSpace">
       <HeaderGrid />
       <Spacer />
       <About />
       <Projects id="projects" data={data} />
+      <Spacer />
       <Spacer />
       <Form />
       <Spacer />

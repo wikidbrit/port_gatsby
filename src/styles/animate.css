@@ -1,7 +1,11 @@
+html {
+  background: white;
+  overflow-x: hidden;
+}
+
 .background {
   width: 100vw;
   height: 100vh;
-  color: white;
   background-blend-mode: overlay;
   background-color: white;
   background: linear-gradient(45deg, #0C303F, #400F41, #0C303F, #400F41);
@@ -13,6 +17,7 @@
   left: 0;
   top: 0;
   z-index: -1;
+  overflow: hidden;
 }
 
 @-webkit-keyframes Gradient {
@@ -48,5 +53,24 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+
+  .background {
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: white;
+    background: linear-gradient(45deg, #0C303F, #400F41, #0C303F, #400F41);
+    background-size: 500% 500%;
+    -webkit-animation: Gradient 20s ease infinite;
+    -moz-animation: Gradient 20s ease infinite;
+    animation: Gradient 20s ease infinite;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
   }
 }

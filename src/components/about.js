@@ -1,5 +1,4 @@
 import React from "react"
-import Spacer from "../components/spacer"
 
 import "../styles/desktop.css"
 import ProfileImage from "../images/profileimage2.png"
@@ -12,7 +11,6 @@ export default function about() {
         <h2 className="percent wiaH2">Who I am</h2>
         <span className="code h2code2 bottom">{"</h2>"}</span>
       </div>
-      <Spacer />
       <div className="paulImage">
         <span className="h2code code Top">{"<img src={superCoolGuy}>"}</span>
         <img
@@ -22,7 +20,6 @@ export default function about() {
         ></img>
         <span className="h2code code Top">{"</img>"}</span>
       </div>
-      <Spacer />
       <div className="aboutText">
         <span className="code pcode">{"<p src={interestingText}>"}</span>
         <p>

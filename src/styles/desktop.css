@@ -14,10 +14,17 @@
   body {
     max-width: 1580px;
     margin: 0 auto;
+    scroll-behavior: smooth;
   }
 
   .display {
     display: block;
+  }
+
+
+
+  .navSpace {
+    margin-left: 62px;
   }
 
   h2 {
@@ -100,13 +107,13 @@
 
   /* Logo Cover */
 
-  /* .landingRight {
+  .landingRight {
     position: relative;
     grid-column: 2 /3;
     height: 100%;
     width: 100%;
     margin-top: 13%;
-  } */
+  }
 
   .landingLeft {
     grid-column: 1/2;
@@ -116,18 +123,19 @@
 
   .wrapper {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 10vh 1fr 20vh;
-    min-height: 100vh;
     margin-bottom: 20px;
     overflow: hidden;
-    max-height: 1260px;
+    min-height: 90vh;
+    max-height: 1080px;
   }
 
   .section_1 {
     grid-column: 1/2;
     grid-row: 1/2;
     align-self: flex-end;
+    display: block;
   }
 
   .headerTextGrid {
@@ -147,12 +155,15 @@
     width: 100%;
   }
 
+  .buttons {
+    padding: 25px;
+  }
+
+
   .contactButton {
-    height: 46px;
-    padding: 12px 45px;
-    margin: 12px 0 12px 5%;
+    padding: 12px 24px;
+    margin: 0;
     text-align: center;
-    width: 168px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     font-family: "Source Sans Pro";
     font-size: 12pt;
@@ -160,6 +171,20 @@
     letter-spacing: 1.05px;
     color: white;
     background: #196db6;
+    border-radius: 3px;
+  }
+
+  .resumeButton {
+    padding: 13px 24px;
+    margin: 0 0 0 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: "Source Sans Pro";
+    font-size: 12pt;
+    font-weight: 300;
+    letter-spacing: 1.05px;
+    color: white;
+    background: #c101aa;
     border-radius: 3px;
   }
 
@@ -183,7 +208,7 @@
     height: 100vh;
     max-height: 1080px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 15vh 40vh 40vh;
+    grid-template-rows: auto;
     margin-top: 20px;
   }
 
@@ -215,7 +240,7 @@
 
   .paulImage {
     grid-column: 1/2;
-    grid-row: 1/ 4;
+    grid-row: 1/ 5;
     height: 40vw;
     width: auto;
     justify-self: center;
@@ -261,7 +286,7 @@
     grid-row: 3/4;
     color: var(--offwhite-text);
     font-size: 2vw;
-    align-self: flex-start;
+    align-self: center;
     background: url("../images/backstop-28.png");
     background-repeat: no-repeat;
     background-position: left;
@@ -285,13 +310,12 @@
 
   .iconSet {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 4/5;
     display: grid;
-    align-self: center;
+    align-self: flex-start;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 90px);
     width: 70%;
-    height: 50%;
   }
 
   .icon1 {

@@ -36,6 +36,7 @@ const angledTop = {
   zIndex: "3",
 }
 
+
 const angledMiddle = {
   alignSelf: "center",
   position: "absolute",
@@ -67,18 +68,21 @@ export default function Logo() {
         alt={" "}
         src={AngledTop}
       ></img>
+
       <img
         style={angledMiddle}
         className="angledMiddle"
         alt={" "}
         src={AngledMiddle}
       ></img>
+
       <img
         style={angledBottom}
         className="angledBottom"
         alt={" "}
         src={AngledBottom}
       ></img>
+      
       <p>{x}</p>
       <br></br>
       <p>" " {y}</p>
