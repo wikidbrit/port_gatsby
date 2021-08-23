@@ -12,9 +12,11 @@ import Background from "../components/background"
 import Nav from "../components/nav"
 import SvgLogo from "../components/logoSvg"
 
+import LogoMain from "../components/logoMain"
+
 const BlogIndex = ({ data }) => {
   return (
-    <div className="white">
+    <div>
       <Seo title="Home" />
       <Nav />
       <div className="navSpace">
@@ -26,11 +28,11 @@ const BlogIndex = ({ data }) => {
         <Spacer />
         <Form />
         <Spacer />
-
         <Footer />
       </div>
-      <Background />
       <SvgLogo />
+      <Background />
+      {/* <LogoMain className='index' /> */}
     </div>
   )
 }

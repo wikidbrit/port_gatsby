@@ -18,7 +18,6 @@ export default function projects(props) {
         <p className=" buttonTag code">{"</h2>"}</p>
       </div>
 
-      <Line />
       <Spacer />
       <ol>
         {posts.map(post => {

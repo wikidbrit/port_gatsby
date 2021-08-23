@@ -19,7 +19,9 @@
 
   .navSpace {
     margin-left: 62px;
+
   }
+
 
   h2 {
     font-size: clamp(48pt, 3.5vw, 64pt);
@@ -103,6 +105,7 @@
     margin-top: 0;
     min-height: 90vh;
     max-height: 1080px;
+
   }
 
   .section_1 {
@@ -116,6 +119,7 @@
     grid-column: 1/2;
     grid-row: 2/3;
     align-self: center;
+
   }
 
   .buttonArea {
@@ -127,6 +131,7 @@
     margin-left: 5%;
     margin-bottom: 0;
     width: 100%;
+
   }
 
   .buttons {
@@ -180,6 +185,7 @@
     background-position: left;
     background-position-x: 10%;
     background-size: 30%;
+
   }
 
   .wiaH2 {
@@ -239,6 +245,7 @@
     background-position: left;
     background-position-x: 8%;
     background-size: 20%;
+
   }
 
   .stuffIKnow h3 {
@@ -263,6 +270,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 90px);
     width: 70%;
+
   }
 
   .icon1 {
@@ -280,6 +288,8 @@
 
   /* Projects */
 
+  
+
   .projectHeader {
     margin-left: 8%;
     background: url("../images/backstop-28.png");
@@ -287,19 +297,16 @@
     background-position: left;
     background-position-x: 5%;
     background-size: 15%;
+
   }
 
   .projectWrapper {
+
     max-width: 65%;
     min-height: 110px;
     max-height: 120px;
     background-size: cover;
     transition: transform 200ms ease-in-out, filter 300ms ease-in-out;
-  }
-
-  .projectWrapper:hover {
-    transform: scale(1.03, 1.03);
-    /* filter: drop-shadow(-2px 2px 5px rgba(0, 180, 214,0.5)) drop-shadow(2px -2px 5px rgba(255, 0, 227,0.5)); */
   }
 
   /* Form */
@@ -313,12 +320,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
   }
 
   .formSubheader {
     margin: 0 auto;
     width: 960px;
     text-align: center;
+
   }
 
   .formBox {

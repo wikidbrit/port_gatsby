@@ -14,7 +14,6 @@ export default function form() {
         Please get in touch if I can help you reach your vision
       </p>
       <p className=" formTag  code">{"</p>"}</p>
-      <Line />
       <Spacer />
       <p className=" formTag  code">{"<form className='youKnowYouWantTo'>"}</p>
       <form
