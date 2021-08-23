@@ -125,7 +125,6 @@ h2 {
   letter-spacing: 1.05px;
   color: white;
   background: #196DB6;
-  border-radius: 3px;
 }
 
 .resumeButton {
@@ -139,7 +138,6 @@ h2 {
   letter-spacing: 1.05px;
   color: white;
   background: #c101aa;
-  border-radius: 3px;
 }
 
 .spacer {
@@ -341,7 +339,6 @@ textarea {
   letter-spacing: 1.05px;
   color: white;
   background: #196DB6;
-  border-radius: 3px;
 }
 
 .subText {

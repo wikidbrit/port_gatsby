@@ -7,13 +7,15 @@ function useMouse() {
   const [mousePosition, setMousePosition] = useState({
     x: null,
     y: null,
+    _x: null,
+    _y: null,
   })
 
   useEffect(() => {
     function handle(e) {
       setMousePosition({
-        x: e.pageX,
-        y: e.pageY,
+        x: window.innerWidth / e.pageX,
+        y: window.innerHeight / e.pageY,
       })
     }
     document.addEventListener("mousemove", handle)
@@ -23,52 +25,51 @@ function useMouse() {
   return mousePosition
 }
 
-const topLightGradient = {
-    zIndex: "7",
-  }
+// const topLightGradient = {
+//   zIndex: "7",
+// }
 
-  const topMainLayer = {
-    zIndex: "6",
-  }
+const topMainLayer = {
+  zIndex: "6",
+}
 
-  const topGradientBlur = {
-    zIndex: "5",
-    filter: "blur(15px)",
-  }
+const topGradientBlur = {
+  zIndex: "5",
+  filter: "blur(15px)",
+}
 
-  const middleStroke = {
-    zIndex: "4",
-  }
+const middleStroke = {
+  zIndex: "4",
+}
 
-  const middleOverlay = {
-    zIndex: "3",
-    opacity: '0.1'
-  }
+const middleOverlay = {
+  zIndex: "3",
+  opacity: "0.1",
+}
 
-  const backStrokeLayer = {
-    zIndex: "2",
-  }
+const backStrokeLayer = {
+  zIndex: "2",
+}
 
-  const backGradientLayer = {
-    zIndex: "1",
-  }
+const backGradientLayer = {
+  zIndex: "1",
+}
 
-  const backGradientBlur = {
-    zIndex: "0",
-    filter: "blur(10px)",
-  }
+const backGradientBlur = {
+  zIndex: "0",
+  filter: "blur(10px)",
+}
 
 export default function LogoSvg(props) {
-  
   const { x, y } = useMouse()
 
   return (
     <div className="svgContainer">
-
-      {/* <p>{x} and {y}</p> */}
       {/* Top Aesthetic Gradient Layer */}
       <svg
-        style={topLightGradient}
+        style={{
+          zIndex: "7",
+        }}
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -182,9 +183,7 @@ export default function LogoSvg(props) {
             isolation: "isolate",
           }}
         >
-          <g
-            data-name="Layer 1"
-          >
+          <g data-name="Layer 1">
             <path
               className="cls-3"
               d="M42.757 33.81L103.786 26.776 84.009 357.21 22.98 364.244 42.757 33.81z"

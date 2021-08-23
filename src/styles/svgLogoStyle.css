@@ -1,16 +1,14 @@
 .svgContainer {
-margin-left: 8%;
-height: 60vh;
-width: 100vw;
-margin-top: 5%;
-
+  margin-left: 8%;
+  height: 60vh;
+  width: 100vw;
+  margin-top: 5%;
 }
 
 .svgContainer svg {
   position: absolute;
   width: 85%;
   height: 40vh;
-
 }
 
 @media screen and (min-width: 960px) {
@@ -27,13 +25,11 @@ margin-top: 5%;
     height: 80vh;
     width: 38%;
     max-height: 800px;
-
   }
 }
 
 @media screen and (min-width: 1580px) {
   .svgContainer svg {
-left: 55%;
+    left: 55%;
   }
 }
-

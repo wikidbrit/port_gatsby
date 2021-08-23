@@ -19,9 +19,7 @@
 
   .navSpace {
     margin-left: 62px;
-
   }
-
 
   h2 {
     font-size: clamp(48pt, 3.5vw, 64pt);
@@ -117,7 +115,6 @@
     grid-column: 1/2;
     grid-row: 2/3;
     align-self: center;
-
   }
 
   .buttonArea {
@@ -129,7 +126,6 @@
     margin-left: 5%;
     margin-bottom: 0;
     width: 100%;
-
   }
 
   .buttons {
@@ -140,17 +136,45 @@
     margin: 0;
   }
 
-  .resumeButton {
-    margin: 0 0 0 20px;
+  .contactButton {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: #196DB6;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   }
 
-  /* Spacer */
+  .contactButton:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: #196DB6;
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px var(--blue-color);
+  }
 
-  /* .spacer {
-    background-color: #ebf5f7;
-    opacity: 0;
-    height: 60px;
-  } */
+  .resumeButton {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: #c101aa;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .resumeButton:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: #c101aa;
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px var(--pink-color);
+  }
+
+
 
   /* About Section */
 
@@ -182,8 +206,7 @@
     background-repeat: no-repeat;
     background-position: left;
     background-position-x: 10%;
-    background-size:contain;
-
+    background-size: contain;
   }
 
   .wiaH2 {
@@ -243,7 +266,6 @@
     background-position: left;
     background-position-x: 8%;
     background-size: 20%;
-
   }
 
   .stuffIKnow h3 {
@@ -268,7 +290,6 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 90px);
     width: 70%;
-
   }
 
   .icon1 {
@@ -286,8 +307,6 @@
 
   /* Projects */
 
-  
-
   .projectHeader {
     margin-left: 8%;
     background: url("../images/backstop-28.png");
@@ -295,11 +314,9 @@
     background-position: left;
     background-position-x: 5%;
     background-size: 15%;
-
   }
 
   .projectWrapper {
-
     max-width: 65%;
     min-height: 110px;
     max-height: 120px;
@@ -318,14 +335,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
   }
 
   .formSubheader {
     margin: 0 auto;
     width: 960px;
     text-align: center;
-
   }
 
   .formBox {
@@ -333,6 +348,25 @@
     flex-direction: column;
     width: 40%;
     margin: 0 auto;
+  }
+
+  .formButton {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: #196DB6;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .formButton:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: #196DB6;
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px var(--blue-color);
   }
 
   /* Footer */

@@ -31,15 +31,25 @@ export default function headerGrid() {
         </p>
         <div className="buttons">
           {" "}
-          <Link to="#contact" className="contactButton landingButton">
+          {/* <Link to="#contact" className="contactButton landingButton">
             CONTACT
-          </Link>
-          <a href={Resume} download className="resumeButton landingButton">RESUME</a>
+          </Link> */}
+          <a href="#contact">
+            <button class="contactButton">
+              CONTACT<span class="icon-right1"></span>
+              <span class="icon-right1 after"></span>
+            </button>
+          </a>
+          <a href={Resume} download className="landingButton">
+            <button class="resumeButton">
+              RESUME<span class="icon-right2"></span>
+              <span class="icon-right2 after"></span>
+            </button>
+          </a>
         </div>
 
         <p className=" buttonTag code">{"</button>"}</p>
       </div>
-
     </div>
   )
 }
