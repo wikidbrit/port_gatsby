@@ -4,12 +4,12 @@ html {
 }
 
 .background {
-  width: 120vw;
-  height: 120vh;
+  width: 110vw;
+  height: 110vh;
   background-blend-mode: overlay;
   background-color: white;
-  background: linear-gradient(45deg, #0C303F, #400F41, #0C303F, #400F41);
-  background-size: 500% 500%;
+  background: linear-gradient(45deg, #0C303F, #400F41, #0C303F);
+  background-size: 300% 300%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
   animation: Gradient 20s ease infinite;
