@@ -1,7 +1,6 @@
 import React from "react"
 
 import Spacer from "../components/spacer"
-import Line from "../components/line"
 
 export default function form() {
   return (

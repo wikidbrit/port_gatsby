@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby"
 import Footer from "../components/footer"
 import Background from "../components/background"
 import Seo from "../components/seo"
-import Nav from '../components/nav'
+import Nav from "../components/nav"
 
 const BlogPostContentfulTemplate = ({ data, location }) => {
   const post = data.allContentfulProjects.edges[0].node
@@ -33,8 +33,8 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
   return (
     <div location={location}>
       <Seo title={post.title} />
-      <Nav style={{zIndex:'1'}}/>
-      <div id="blogPost" style={{zIndex:'0'}}>
+      <Nav style={{ zIndex: "1" }} />
+      <div id="blogPost" style={{ zIndex: "0" }}>
         <img
           className="coverImage"
           alt={coverImageAlt}
@@ -44,11 +44,9 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
         <div className="templateHeaderText">
           <p className=" templateCode buttonTag code">{"<h1>"}</p>
           <h1 className="templateh1">{post.title}</h1>
-          
-          <p className=" templateCode buttonTag code">{"</h1>"}</p>
-          
-        </div>
 
+          <p className=" templateCode buttonTag code">{"</h1>"}</p>
+        </div>
 
         <div className="overviewText ">
           <p className=" templateCodeBody right buttonTag code">{"<p>"}</p>
@@ -102,16 +100,12 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
           <h2 className="conHeader">To Sum It Up</h2>
           <p className=" templateCode buttonTag code">{"</h2>"}</p>
           <p className=" templateCode buttonTag code">{"<p>"}</p>
-
           <p
-          className="conBody templateText"
-          dangerouslySetInnerHTML={{ __html: conclusionText }}
-        />          <p className=" templateCode buttonTag code">{"</p>"}</p>
-
+            className="conBody templateText"
+            dangerouslySetInnerHTML={{ __html: conclusionText }}
+          />{" "}
+          <p className=" templateCode buttonTag code">{"</p>"}</p>
         </div>
-        
-
-
 
         <Link className="return" to="/#projects" itemProp="url">
           Return

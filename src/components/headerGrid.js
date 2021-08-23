@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 // import Logo from "../components/logo"
 import SvgLogo from "../components/logoSvg"
 import Resume from "../components/pdfs/paulFleming_resume.pdf"
@@ -31,19 +30,16 @@ export default function headerGrid() {
         </p>
         <div className="buttons">
           {" "}
-          {/* <Link to="#contact" className="contactButton landingButton">
-            CONTACT
-          </Link> */}
           <a href="#contact">
-            <button class="contactButton">
-              CONTACT<span class="icon-right1"></span>
-              <span class="icon-right1 after"></span>
+            <button className="contactButton">
+              CONTACT<span className="icon-right1"></span>
+              <span className="icon-right1 after"></span>
             </button>
           </a>
           <a href={Resume} download className="landingButton">
-            <button class="resumeButton">
-              RESUME<span class="icon-right2"></span>
-              <span class="icon-right2 after"></span>
+            <button className="resumeButton">
+              RESUME<span className="icon-right2"></span>
+              <span className="icon-right2 after"></span>
             </button>
           </a>
         </div>

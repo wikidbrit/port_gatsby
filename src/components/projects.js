@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Spacer from "../components/spacer"
-import Line from "../components/line"
 
 
 export default function projects(props) {

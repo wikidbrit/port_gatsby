@@ -62,6 +62,7 @@ const backGradientBlur = {
 
 export default function LogoSvg(props) {
   const { x, y } = useMouse()
+  console.log(x, y)
 
   return (
     <div className="svgContainer">
