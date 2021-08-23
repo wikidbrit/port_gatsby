@@ -38,6 +38,7 @@ export default function projects(props) {
                       margin: "20px auto",
                       backgroundImage:
                         "url(https://" + post.node.coverimage.file.url + ")",
+                        backgroundPosition:'center',
                     }}
                   >
                     <h2>
