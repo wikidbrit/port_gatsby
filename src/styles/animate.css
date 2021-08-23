@@ -4,8 +4,8 @@ html {
 }
 
 .background {
-  width: 100vw;
-  height: 100vh;
+  width: 120vw;
+  height: 120vh;
   background-blend-mode: overlay;
   background-color: white;
   background: linear-gradient(45deg, #0C303F, #400F41, #0C303F, #400F41);
@@ -16,7 +16,7 @@ html {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: 1;
   overflow: hidden;
 }
 

@@ -61,7 +61,6 @@ h2 {
   color: var(--offwhite-text);
   font-size: 3.5vw;
   font-weight: 700;
-  letter-spacing: 0px;
   font-style: italic;
 }
 
@@ -71,6 +70,7 @@ h2 {
 
 .navSpace {
   margin-left: 0;
+  z-index: 1;
 }
 
 .paulText {
@@ -79,14 +79,18 @@ h2 {
   margin-top: 25px;
   margin-bottom: 25px;
   line-height: 1.10em;
+  text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.3),
+  0px -5px 35px rgba(255, 255, 255, 0.3), 2px 1px 8px rgba(255, 0, 227, 0.6),
+  -2px -1px 8px rgba(0, 180, 214, 0.7), -1px 0 black, 0 1px black,
+  1px 0 black, 0 -1px black;
 }
 
 .wrapper {
-  display: grid;
-  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120%;
+  height: auto;
   max-width: 100vw;
-  overflow: hidden;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .percent {
@@ -97,67 +101,17 @@ h2 {
   grid-row: 3/4;
 }
 
-.LogoArea {
-  grid-column: 1/2;
-  grid-row: 1/3;
-  align-self: center;
-  justify-self: center;
-}
-
-.landingRight {
-  display: flex;
-  width: 100vw;
-  z-index: 8;
-  grid-column: 1/2;
-  grid-row: 1/3;
-  align-self: center;
-  justify-self: center;
-}
-
 .headerTextGrid {
   grid-column: 1/2;
   grid-row: 3/4;
 }
 
-.angledTop {
-    align-self: center;
-    position: absolute;
-    z-index: 7;
-    height: 130vw;
-    max-height: 700px;
-    transform: translate(0%, 0%);
-    z-index: 3;
-}
-
-.angledMiddle {
-  align-self: center;
-  position: absolute;
-  z-index: 7;
-  height: 130vw;
-  max-height: 700px;
-  transform: translate(0%, 0%);
-  mix-blend-mode: overlay;
-  opacity: 1;
-  z-index: 2;
-}
-
-.angledBottom {
-  align-self: center;
-  position: absolute;
-  z-index: 7;
-  height: 130vw;
-  max-height: 700px;
-  transform: translate(0%, 0%);
-  z-index: 1;
-}
-
 .buttonArea {
-  grid-column: 1/2;
-  grid-row: 3/4;
+
   margin-left: 8%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   justify-self: left;
-  align-self: flex-end;
+  align-self: left;
 
 }
 
@@ -277,12 +231,8 @@ footer {
   margin-bottom: 8px;
 }
 
-a:hover {
-  color: var(--blue-color);
-}
-
 footer p {
-  font-family: "Source Sans Pro";
+  font-family: var(--code-text);
   font-size: 8pt;
   margin-top: 8px;
   color: white;
@@ -407,13 +357,14 @@ textarea {
 
 #blogPost {
   width: 100vw;
-  max-width: 1580px;
   display: flex;
   flex-direction: column;
 }
 
 .coverImage {
   width: 100vw;
+  height: 20vh;
+  object-fit: cover;
 }
 
 .templateh1 {
@@ -448,9 +399,9 @@ textarea {
 }
 
 .conHeader {
+  margin: 40px 0 50px 8%;
   font-size: clamp(24pt, 3.5vw, 32pt);
   text-align: left;
-  margin-left: 8%;
 }
 
 

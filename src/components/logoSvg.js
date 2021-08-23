@@ -59,14 +59,13 @@ const topLightGradient = {
   }
 
 export default function LogoSvg(props) {
+  
   const { x, y } = useMouse()
-
-
 
   return (
     <div className="svgContainer">
 
-      {/* <p>{x} and {y}</p> */}
+      <p>{x} and {y}</p>
       {/* Top Aesthetic Gradient Layer */}
       <svg
         style={topLightGradient}

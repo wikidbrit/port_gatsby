@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import SvgLogo from "../components/logoSvg"
 import Resume from "../components/pdfs/paulFleming_resume.pdf"
 
+import "/src/styles/svgLogoStyle.css"
+
 export default function headerGrid() {
   return (
     <div className="wrapper">
@@ -36,7 +38,7 @@ export default function headerGrid() {
 
         <p className=" buttonTag code">{"</button>"}</p>
       </div>
-      <SvgLogo />
+      {/* <SvgLogo className="display2" /> */}
       {/* <Logo /> */}
     </div>
   )
