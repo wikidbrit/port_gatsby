@@ -10,7 +10,7 @@ const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <div location={location} title={siteTitle}>
+    <div className='navSpace' location={location} title={siteTitle}>
       <Seo title="404: Not Found" />
       <Nav />
       <h1
