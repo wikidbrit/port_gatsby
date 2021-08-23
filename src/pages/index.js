@@ -10,9 +10,6 @@ import Projects from "../components/projects"
 import Form from "../components/form"
 import Background from "../components/background"
 import Nav from "../components/nav"
-import SvgLogo from "../components/logoSvg"
-
-import LogoMain from "../components/logoMain"
 
 const BlogIndex = ({ data }) => {
   return (
@@ -30,9 +27,7 @@ const BlogIndex = ({ data }) => {
         <Spacer />
         <Footer />
       </div>
-      <SvgLogo />
       <Background />
-      {/* <LogoMain className='index' /> */}
     </div>
   )
 }

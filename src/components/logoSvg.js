@@ -42,7 +42,7 @@ const topLightGradient = {
 
   const middleOverlay = {
     zIndex: "3",
-    mixBlendMode: "overlay",
+    opacity: '0.1'
   }
 
   const backStrokeLayer = {
@@ -65,7 +65,7 @@ export default function LogoSvg(props) {
   return (
     <div className="svgContainer">
 
-      <p>{x} and {y}</p>
+      {/* <p>{x} and {y}</p> */}
       {/* Top Aesthetic Gradient Layer */}
       <svg
         style={topLightGradient}
@@ -183,9 +183,6 @@ export default function LogoSvg(props) {
           }}
         >
           <g
-            style={{
-              mixBlendMode: "overlay",
-            }}
             data-name="Layer 1"
           >
             <path

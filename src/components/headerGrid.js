@@ -13,6 +13,7 @@ export default function headerGrid() {
         <p className="outerTag code bottom">{"<!DOCTYPE HTML>"}</p>
         <p className="bodyTag code">{"<body>"}</p>
       </div>
+      <SvgLogo />
       <div className="headerTextGrid">
         <p className="innerTag code ">{"<h1 className='getTheirAttention'>"}</p>
         <h1 className="landingText">
@@ -38,8 +39,7 @@ export default function headerGrid() {
 
         <p className=" buttonTag code">{"</button>"}</p>
       </div>
-      {/* <SvgLogo className="display2" /> */}
-      {/* <Logo /> */}
+
     </div>
   )
 }

@@ -72,12 +72,6 @@ h2 {
   margin-left: 0;
 }
 
-.navBar {
-}
-
-.index {
-  z-index: 0;
-}
 
 .paulText {
   max-width: 80%;
@@ -94,9 +88,9 @@ h2 {
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 120%;
   height: auto;
   max-width: 100vw;
+  max-height: 95vh;
 }
 
 .percent {
