@@ -10,7 +10,7 @@
 
 Welcome to the repo for my personal portfolio page. This is my first real page to showcase the work/learning I have been doing at Hyper Island and beyond. My intention is to continue to improve and refine the page as I learn more and grow more confident in wed development.
 
-Care to see the deployed site? [You will soon be able to view here](https://fleming.digital).
+Care to see the deployed site? [Check it out!](https://fleming.digital).
 ## 🔧 The Process
 
 1.  **First Steps**
