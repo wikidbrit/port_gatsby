@@ -1,6 +1,7 @@
 import React from "react"
 import SvgLogo from "../components/logoSvg"
-import Resume from "../components/pdfs/flemingPaul_resume.pdf"
+// import Resume from "src/components/pdfs/flemingPaul_Resume.pdf"
+
 
 import "/src/styles/svgLogoStyle.css"
 
@@ -39,7 +40,7 @@ export default function headerGrid() {
               <span className="icon-right1 after"></span>
             </button>
           </a>
-          <a href={Resume} download className="landingButton">
+          <a href="src/components/pdfs/flemingPaul_Resume.pdf" target="_blank" rel="noreferrer" className="landingButton">
             <button className="resumeButton">
               RESUME<span className="icon-right2"></span>
               <span className="icon-right2 after"></span>
