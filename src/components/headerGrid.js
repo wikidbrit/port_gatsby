@@ -1,6 +1,5 @@
 import React from "react"
 import SvgLogo from "../components/logoSvg"
-// import Resume from "src/components/pdfs/flemingPaul_Resume.pdf"
 
 
 import "/src/styles/svgLogoStyle.css"
@@ -40,7 +39,7 @@ export default function headerGrid() {
               <span className="icon-right1 after"></span>
             </button>
           </a>
-          <a href="src/components/pdfs/flemingPaul_Resume.pdf" target="_blank" rel="noreferrer" className="landingButton">
+          <a href="https://www.icloud.com/iclouddrive/0srso8go_LtFhRtpUP4J0ykQQ#flemingPaul%5FResume" target="_blank" rel="noreferrer" className="landingButton">
             <button className="resumeButton">
               RESUME<span className="icon-right2"></span>
               <span className="icon-right2 after"></span>
