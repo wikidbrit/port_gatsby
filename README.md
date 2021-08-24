@@ -6,6 +6,8 @@
   Paul Fleming Portfolio Page
 </h1>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f578009c-ce87-4165-8bb4-55b502f93246/deploy-status)](https://app.netlify.com/sites/silly-brattain-a33c55/deploys)
+
 Welcome to the repo for my personal portfolio page. This is my first real page to showcase the work/learning I have been doing at Hyper Island and beyond. My intention is to continue to improve and refine the page as I learn more and grow more confident in wed development.
 
 Care to see the deployed site? [You will soon be able to view here](https://www.gatsbyjs.com/docs/gatsby-starters/).
