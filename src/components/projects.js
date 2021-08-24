@@ -16,6 +16,7 @@ export default function projects(props) {
         <h2 className="twoper">Projects</h2>
         <p className=" buttonTag code">{"</h2>"}</p>
       </div>
+      
 
       <Spacer />
       <ol>
