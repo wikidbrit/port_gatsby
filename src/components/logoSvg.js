@@ -1,33 +1,25 @@
 import React from "react"
 import { useState, useEffect } from "react"
 
+
 import "/src/styles/svgLogoStyle.css"
 
-function useMouse() {
-  const [mousePosition, setMousePosition] = useState({
-    x: null,
-    y: null,
-    _x: null,
-    _y: null,
-  })
+// const Wrapper = styled(motion.div)`
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: black;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// `
 
-  useEffect(() => {
-    function handle(e) {
-      setMousePosition({
-        x: window.innerWidth / e.pageX,
-        y: window.innerHeight / e.pageY,
-      })
-    }
-    document.addEventListener("mousemove", handle)
-    return () => document.removeEventListener("mousemove", handle)
-  })
+const topTransform = {
 
-  return mousePosition
 }
 
-// const topLightGradient = {
-//   zIndex: "7",
-// }
+const topLightGradient = {
+  zIndex: "7",
+}
 
 const topMainLayer = {
   zIndex: "6",
@@ -61,16 +53,13 @@ const backGradientBlur = {
 }
 
 export default function LogoSvg(props) {
-  const { x, y } = useMouse()
-  console.log(x, y)
 
   return (
+  
     <div className="svgContainer">
       {/* Top Aesthetic Gradient Layer */}
       <svg
-        style={{
-          zIndex: "7",
-        }}
+        style={topLightGradient, topTransform}
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
