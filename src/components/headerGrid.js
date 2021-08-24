@@ -1,11 +1,14 @@
 import React from "react"
-// import Logo from "../components/logo"
 import SvgLogo from "../components/logoSvg"
 import Resume from "../components/pdfs/paulFleming_resume.pdf"
 
 import "/src/styles/svgLogoStyle.css"
 
+
+
 export default function headerGrid() {
+
+
   return (
     <div className="wrapper">
       <div className="section_1">
