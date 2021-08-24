@@ -111,7 +111,7 @@ h2 {
   margin-bottom: 10%;
   justify-self: left;
   align-self: left;
-
+  z-index: 990;
 }
 
 .contactButton {
