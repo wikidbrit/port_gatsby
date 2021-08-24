@@ -18,8 +18,9 @@ export default function form() {
       <form
         className="formBox"
         name='contact'
-        data-netlify="true"
         method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="contact" value="contact" />
         <input
