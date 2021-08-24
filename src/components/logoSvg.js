@@ -8,7 +8,7 @@ import "/src/styles/svgLogoStyle.css"
 const MouseArea = styled(motion.div)`
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0);
@@ -173,14 +173,16 @@ export default function LogoSvg(props) {
           translateY: middleLayerY,
           translateX: middleLayerX,
           transition: ".3s ease-out",
-          opacity: 0.2,
+          opacity:'0.3',
+          filter: 'drop-shadow(inset 0px 0px 24px 5px #FFFFFF)',     
         }}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 296.09057 381.31465"
         {...props}
       >
         <defs>
-          <style>{".cls-3{fill:#ededed}"}</style>
+          <style>{".cls-3{fill:#ededed"}</style>
+
         </defs>
         <g
           style={{
