@@ -1,6 +1,6 @@
 import React from "react"
 import SvgLogo from "../components/logoSvg"
-import Resume from "../components/pdfs/paulFleming_resume.pdf"
+import Resume from "../components/pdfs/flemingPaul_resume.pdf"
 
 import "/src/styles/svgLogoStyle.css"
 
