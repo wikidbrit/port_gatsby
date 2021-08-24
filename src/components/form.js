@@ -17,7 +17,7 @@ export default function form() {
       <p className=" formTag  code">{"<form className='youKnowYouWantTo'>"}</p>
       <form
         className="formBox"
-        name='contact'
+        name="contact"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
@@ -28,6 +28,13 @@ export default function form() {
           type="text"
           placeholder="Name"
           name="name"
+          required
+        />
+        <input
+          className="inputField emailField"
+          type="Email"
+          placeholder="Email"
+          name="email"
           required
         />
         <input
