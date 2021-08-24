@@ -30,7 +30,7 @@ export default function form() {
         />
         <input
           className="inputField emailField"
-          type="email"
+          type="text"
           placeholder="Email"
           name="email"
           required
