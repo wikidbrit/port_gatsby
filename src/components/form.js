@@ -21,6 +21,7 @@ export default function form() {
         data-netlify="true"
         method="POST"
       >
+        <input type="hidden" name="contact" value="contact" />
         <input
           className="inputField nameField"
           type="text"
@@ -30,7 +31,7 @@ export default function form() {
         />
         <input
           className="inputField emailField"
-          type="text"
+          type="Email"
           placeholder="Email"
           name="email"
           required
