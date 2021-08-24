@@ -17,7 +17,8 @@ export default function form() {
       <p className=" formTag  code">{"<form className='youKnowYouWantTo'>"}</p>
       <form
         className="formBox"
-        action="https://getform.io/f/a6aa5e0f-9b6d-4a9c-b4c1-61b0c22126d7"
+        name='contact'
+        data-netlify="true"
         method="POST"
       >
         <input

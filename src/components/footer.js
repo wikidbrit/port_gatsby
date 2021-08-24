@@ -41,11 +41,11 @@ export default function footer() {
         <a href="https://www.contentful.com/" target="_blank" rel="noreferrer">
           Contentful
         </a>
-        <br></br>
+        {/* <br></br>
         Form powered by{" "}
         <a href="https://getform.io/" target="_blank" rel="noreferrer">
           GetForm
-        </a>
+        </a> */}
       </p>
     </footer>
   )
