@@ -23,16 +23,14 @@ export default function about() {
       <div className="aboutText">
         <span className="code pcode">{"<p src={interestingText}>"}</span>
         <p>
-          I am a Digital Designer and aspiring Front End Developer currently
-          studying in Stockholm, Sweden.
+          I'm a graphic designer, front end developer, logo maker, technical writer, UI/UX designer and a blanket fort expert. 
           <br></br>
           <br></br>I am a self driven and motivated to learn more about the
           skills needed to be not only successful, but a leader in this
           industry.
           <br></br>
           <br></br>
-          My hobbies include watching science fiction, skateboarding, cycling,
-          and following the aerospace industry.{" "}
+          Ask me about Star Trek, skateboarding, movies, cycling, NFL football, and how to break your leg with minimum effort. {" "}
         </p>
         <span className="code pcode2">{"<p>"}</span>
       </div>
