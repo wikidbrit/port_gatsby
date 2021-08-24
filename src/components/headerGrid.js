@@ -39,7 +39,7 @@ export default function headerGrid() {
               <span className="icon-right1 after"></span>
             </button>
           </a>
-          <a href="https://www.icloud.com/iclouddrive/0srso8go_LtFhRtpUP4J0ykQQ#flemingPaul%5FResume" target="_blank" rel="noreferrer" className="landingButton">
+          <a href="https://www.dropbox.com/s/zrs00ospiod5jfe/flemingPaul_Resume.pdf?dl=0" target="_blank" rel="noreferrer" className="landingButton">
             <button className="resumeButton">
               RESUME<span className="icon-right2"></span>
               <span className="icon-right2 after"></span>
