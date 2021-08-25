@@ -7,10 +7,10 @@ import Seo from "../components/seo"
 import Nav from "../components/nav"
 
 import GitHubLogo from "../images/icons/github-01.png"
+import BehanceLogo from "../images/icons/behanceLogo.png"
 
 const BlogPostContentfulTemplate = ({ data, location }) => {
   const post = data.allContentfulProjects.edges[0].node
-  // const siteTitle = data.allContentfulProjects?.title || "Title"
   const coverImageUrl = "https:" + post.coverimage.file.url
   const coverImageAlt = post.coverimage.file.filename
   const overviewText = post.overview.internal.content
@@ -98,13 +98,34 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
             className="conBody templateText"
             dangerouslySetInnerHTML={{ __html: conclusionText }}
           />{" "}
-                  {post.githubUrl && (
-          <div  className='renderedIcon'>
-          <p>
-            View the GitHub repository <br></br><a href={post.githubUrl}><img className='gitHubIcon' src={GitHubLogo} alt='github icon'></img></a>
-          </p>
-          </div>
-        )}
+          {post.githubUrl && (
+            <div className="renderedIcon">
+              <p>
+                View the GitHub repository <br></br>
+                <a href={post.githubUrl}>
+                  <img
+                    className="gitHubIcon"
+                    src={GitHubLogo}
+                    alt="github icon"
+                  ></img>
+                </a>
+              </p>
+            </div>
+          )}
+          {post.behanceUrl && (
+            <div className="renderedIcon">
+              <p>
+                View the project on Behance <br></br>
+                <a href={post.behanceUrl}>
+                  <img
+                    className="gitHubIcon"
+                    src={BehanceLogo}
+                    alt="github icon"
+                  ></img>
+                </a>
+              </p>
+            </div>
+          )}
           <p className=" templateCode buttonTag code">{"</p>"}</p>
         </div>
 
@@ -176,6 +197,7 @@ export const pageQuery = graphql`
           }
           createdAt(formatString: "DD 'de' MMMM, YYYY")
           githubUrl
+          behanceUrl
         }
       }
     }

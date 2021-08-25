@@ -55,7 +55,7 @@ export default function form() {
           ></textarea>
         </p>
         <p>
-          <input type="submit" value="Submit" className="formButton" />
+          <input type="submit" value="SEND" className="formButton" />
         </p>
       </form>
       <p className=" formTag  code">{"</form>"}</p>

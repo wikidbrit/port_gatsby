@@ -60,6 +60,7 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               createdAt(formatString: "DD 'de' MMMM, YYYY")
               githubUrl
+              behanceUrl
             }
           }
         }

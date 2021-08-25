@@ -337,7 +337,7 @@ textarea {
   text-align: center;
   cursor: pointer;
   height: 46px;
-  width: 148px;
+  max-width: 148px;
   padding: 12px 45px;
   margin: 8px 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
