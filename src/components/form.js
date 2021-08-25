@@ -19,7 +19,6 @@ export default function form() {
       <form
         name="contact"
         className="formBox"
-        name="contact"
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
@@ -59,7 +58,6 @@ export default function form() {
           <input type="submit" value="Submit" className="formButton" />
         </p>
       </form>
-
       <p className=" formTag  code">{"</form>"}</p>
     </div>
   )

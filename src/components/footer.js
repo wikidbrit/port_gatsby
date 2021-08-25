@@ -32,15 +32,16 @@ export default function footer() {
       </div>
       <p className="percent">© 2021 Paul Fleming</p>
       <p className="percent references">
-        Made with{" "}
+        {/* Made with{" "}
         <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">
           Gatsby
-        </a>
+        </a> */}
         <br></br>
-        Content managed by{" "}
+        {/* Content managed by{" "}
         <a href="https://www.contentful.com/" target="_blank" rel="noreferrer">
           Contentful
-        </a>
+        </a> */}
+        paul.fleming@hyperisland.se
         {/* <br></br>
         Form powered by{" "}
         <a href="https://getform.io/" target="_blank" rel="noreferrer">

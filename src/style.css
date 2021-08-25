@@ -39,6 +39,7 @@ a {
 
 .code {
   display: none;
+  cursor: default;
 }
 
 .section_1 {
@@ -124,6 +125,7 @@ h2 {
   letter-spacing: 1.05px;
   color: white;
   background: #196DB6;
+  cursor: pointer;
 }
 
 .resumeButton {
@@ -137,6 +139,7 @@ h2 {
   letter-spacing: 1.05px;
   color: white;
   background: #c101aa;
+  cursor: pointer;
 }
 
 .spacer {
