@@ -44,12 +44,20 @@ export default function form() {
           name="contact"
           required
         />
+                <input
+          className="inputField emailField"
+          type="Email"
+          data-netlify="true"
+          placeholder="Email"
+          name="contact"
+          required
+        />
         <textarea
           className="inputField messageField"
           type="text"
           data-netlify="true"
           placeholder="Message"
-          name="message"
+          name="contact"
           required
           minLength="20"
         />
