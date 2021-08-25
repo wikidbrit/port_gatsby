@@ -15,7 +15,27 @@ export default function form() {
       <p className=" formTag  code">{"</p>"}</p>
       <Spacer />
       <p className=" formTag  code">{"<form className='youKnowYouWantTo'>"}</p>
-      <form
+
+      <form name="contact" method="post" className="formBox">
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+          <label htmlFor="name" lassName="inputField"></label> <br />
+          <input type="text" id="name" name="name" placeholder='Name' required />
+        </p>
+        <p>
+          <label htmlFor="email" className="inputField"></label> <br />
+          <input type="email" id="email"  placeholder='Email'  name="email" required />
+        </p>
+        <p>
+          <label htmlFor="message" className="inputField messageField"></label> <br />
+          <textarea id="message" placeholder='Message'  name="message" required></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Submit" className="formButton"/>
+        </p>
+      </form>
+
+      {/* <form
         className="formBox"
         name="contact"
         method="POST"
@@ -55,7 +75,7 @@ export default function form() {
         <button className="formButton" type="submit">
           SEND
         </button>
-      </form>
+      </form> */}
       <p className=" formTag  code">{"</form>"}</p>
     </div>
   )
