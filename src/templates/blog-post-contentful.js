@@ -6,6 +6,8 @@ import Background from "../components/background"
 import Seo from "../components/seo"
 import Nav from "../components/nav"
 
+import GitHubLogo from "../images/icons/github-01.png"
+
 const BlogPostContentfulTemplate = ({ data, location }) => {
   const post = data.allContentfulProjects.edges[0].node
   // const siteTitle = data.allContentfulProjects?.title || "Title"
@@ -21,14 +23,6 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
   const solutionText = post.solution.internal.content
   const roleText = post.roletext.internal.content
   const conclusionText = post.conclusion.internal.content
-
-  // const GitHubIcon;
-
-  // if(post.githublink) {
-  //   GitHubIcon = (
-  //     <img src={}></img>
-  //   )
-  // }
 
   return (
     <div location={location}>
@@ -104,6 +98,13 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
             className="conBody templateText"
             dangerouslySetInnerHTML={{ __html: conclusionText }}
           />{" "}
+                  {post.githubUrl && (
+          <div  className='renderedIcon'>
+          <p>
+            View the GitHub repository <br></br><a href={post.githubUrl}><img className='gitHubIcon' src={GitHubLogo} alt='github icon'></img></a>
+          </p>
+          </div>
+        )}
           <p className=" templateCode buttonTag code">{"</p>"}</p>
         </div>
 
@@ -174,6 +175,7 @@ export const pageQuery = graphql`
             }
           }
           createdAt(formatString: "DD 'de' MMMM, YYYY")
+          githubUrl
         }
       }
     }

@@ -407,6 +407,20 @@ textarea {
   text-align: left;
 }
 
+.renderedIcon {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+  font-family: "Source Sans Pro";
+}
+
+.gitHubIcon {
+  height: 50px;
+  width: auto;
+  margin: 10px;
+}
+
 
 .return {
   height: 46px;
