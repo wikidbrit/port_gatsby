@@ -22,16 +22,10 @@ export default function form() {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
-        <input
-          type="hidden"
-          name="contact"
-          value="contact"
-          data-netlify="true"
-        />
+        <input type="hidden" name="contact" value="contact" />
         <input
           className="inputField nameField"
           type="text"
-          data-netlify="true"
           placeholder="Name"
           name="contact"
           required
@@ -39,15 +33,13 @@ export default function form() {
         <input
           className="inputField emailField"
           type="Email"
-          data-netlify="true"
           placeholder="Email"
           name="contact"
           required
         />
-                <input
+        <input
           className="inputField emailField"
           type="Email"
-          data-netlify="true"
           placeholder="Email"
           name="contact"
           required
@@ -55,13 +47,12 @@ export default function form() {
         <textarea
           className="inputField messageField"
           type="text"
-          data-netlify="true"
           placeholder="Message"
           name="contact"
           required
           minLength="20"
         />
-        <button className="formButton" name="contact" type="submit">
+        <button className="formButton" type="submit">
           SEND
         </button>
       </form>
