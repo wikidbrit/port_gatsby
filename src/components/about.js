@@ -32,7 +32,7 @@ export default function about() {
           successful.
           <br></br>
           <br></br>
-          Ask me about Star Trek, skateboarding, movies, cycling, NFL football,
+          Ask me about Star Trek, skateboarding, movies, cycling , NFL football,
           and how to break your leg with minimum effort.{" "}
         </p>
         <span className="code pcode2">{"<p>"}</span>
