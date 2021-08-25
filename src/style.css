@@ -307,6 +307,7 @@ footer p {
 }
 
 input {
+  color: white;
   height: 46px;
   width: 100%;
   padding: 12px 20px;
@@ -319,6 +320,7 @@ input {
 }
 
 textarea {
+  color: white;
   width: 100%;
   height: 250px;
   resize: none;
