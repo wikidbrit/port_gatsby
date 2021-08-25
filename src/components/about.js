@@ -25,9 +25,8 @@ export default function about() {
         <p>
           I'm a graphic designer, front end developer, logo maker, technical writer, UI/UX designer and a blanket fort expert. 
           <br></br>
-          <br></br>I am a self driven and motivated to learn more about the
-          skills needed to be not only successful, but a leader in this
-          industry.
+          <br></br>I am self driven and motivated to learn more about the
+          skills needed to be successful and improve. Always eager to learn, I am constantly  looking for inspiration and ways to improve my designs and workflow.
           <br></br>
           <br></br>
           Ask me about Star Trek, skateboarding, movies, cycling, NFL football, and how to break your leg with minimum effort. {" "}

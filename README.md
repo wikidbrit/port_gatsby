@@ -32,9 +32,9 @@ Care to see the deployed site? [Check it out!](https://fleming.digital).
 
 ## 🚗 Whats Coming Next
 
-1. I need to make mockups for the portfolio projects. Those will be added to the CMS soon.
+1. DONE
 2. I would like to render buttons depending on if the information is available from the CMS. I have the basis of that figured out. 
-3. There is more styling required for the project pages.
+3. DONE
 4. Animations!!
 5. CMS content needs to be added and I need to narrow down the projects I plan to show.
 6. Clean the repo some to remove the placeholder assets provided by Gatsby.
