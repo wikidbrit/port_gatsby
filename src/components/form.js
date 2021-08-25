@@ -10,7 +10,7 @@ export default function form() {
       <p className=" formTag  code">{"<h2>"}</p>
       <p className=" formTag  code">{"<p>"}</p>
       <p className="formSubheader display">
-        Please get in touch if I can help you reach your vision
+        Please get in touch!
       </p>
       <p className=" formTag  code">{"</p>"}</p>
       <Spacer />
