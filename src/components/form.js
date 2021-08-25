@@ -16,22 +16,47 @@ export default function form() {
       <Spacer />
       <p className=" formTag  code">{"<form className='youKnowYouWantTo'>"}</p>
 
-      <form name="contact" method="post" className="formBox" data-netlify="true">
+      <form
+        name="contact"
+        className="formBox"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="contact" value="contact" />
         <p>
-          <label htmlFor="name" lassName="inputField"></label> <br />
-          <input type="text" id="name" name="contact" placeholder='Name' required />
+          <label htmlFor="name" className="inputField"></label> <br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
         </p>
         <p>
           <label htmlFor="email" className="inputField"></label> <br />
-          <input type="email" id="email"  placeholder='Email'  name="contact" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            name="email"
+            required
+          />
         </p>
         <p>
-          <label htmlFor="message" className="inputField messageField"></label> <br />
-          <textarea id="message" placeholder='Message'  name="contact" required></textarea>
+          <label htmlFor="message" className="inputField messageField"></label>{" "}
+          <br />
+          <textarea
+            id="message"
+            placeholder="Message"
+            name="message"
+            required
+          ></textarea>
         </p>
         <p>
-          <input type="submit" value="Submit" className="formButton"/>
+          <input type="submit" value="Submit" className="formButton" />
         </p>
       </form>
 
