@@ -16,7 +16,7 @@ export default function form() {
       <Spacer />
       <p className=" formTag  code">{"<form className='youKnowYouWantTo'>"}</p>
 
-      <form name="contact" method="post" className="formBox">
+      <form name="contact" method="post" className="formBox" data-netlify="true">
         <input type="hidden" name="contact" value="contact" />
         <p>
           <label htmlFor="name" lassName="inputField"></label> <br />
