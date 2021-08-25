@@ -17,21 +17,21 @@ export default function form() {
       <p className=" formTag  code">{"<form className='youKnowYouWantTo'>"}</p>
 
       <form name="contact" method="post" className="formBox">
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="contact" value="contact" />
         <p>
           <label htmlFor="name" lassName="inputField"></label> <br />
-          <input type="text" id="name" name="name" placeholder='Name' required />
+          <input type="text" id="name" name="contact" placeholder='Name' required />
         </p>
         <p>
           <label htmlFor="email" className="inputField"></label> <br />
-          <input type="email" id="email"  placeholder='Email'  name="email" required />
+          <input type="email" id="email"  placeholder='Email'  name="contact" required />
         </p>
         <p>
           <label htmlFor="message" className="inputField messageField"></label> <br />
-          <textarea id="message" placeholder='Message'  name="message" required></textarea>
+          <textarea id="message" placeholder='Message'  name="contact" required></textarea>
         </p>
         <p>
-          <input type="submit" value="Submit" className="formButton"/>
+          <input type="submit" value="Submit" name="contact" className="formButton"/>
         </p>
       </form>
 
