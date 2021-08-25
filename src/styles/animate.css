@@ -1,13 +1,10 @@
 html {
-  background: white;
   overflow-x: hidden;
 }
 
 .background {
   width: 110vw;
   height: 110vh;
-  background-blend-mode: overlay;
-  background-color: white;
   background: linear-gradient(45deg, #0C303F, #400F41, #0C303F);
   background-size: 300% 300%;
   -webkit-animation: Gradient 20s ease infinite;
