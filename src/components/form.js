@@ -31,7 +31,7 @@ export default function form() {
           <textarea id="message" placeholder='Message'  name="contact" required></textarea>
         </p>
         <p>
-          <input type="submit" value="Submit" name="contact" className="formButton"/>
+          <input type="submit" value="Submit" className="formButton"/>
         </p>
       </form>
 
