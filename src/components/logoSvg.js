@@ -173,7 +173,7 @@ export default function LogoSvg(props) {
           translateY: middleLayerY,
           translateX: middleLayerX,
           transition: ".3s ease-out",
-          opacity:'0.3',
+          mixBlendMode:'overlay',
           filter: 'drop-shadow(inset 0px 0px 24px 5px #FFFFFF)',     
         }}
         xmlns="http://www.w3.org/2000/svg"

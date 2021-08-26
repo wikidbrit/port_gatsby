@@ -80,9 +80,8 @@
 
   .code {
     display: block;
-    color: white;
+    color: grey;
     position: relative;
-    opacity: 30%;
     font-family: var(--code-text);
     font-size: 0.6rem;
   }
@@ -101,7 +100,7 @@
     grid-template-rows: 10vh 1fr 20vh;
     margin-bottom: 20px;
     margin-top: 0;
-    height: 100vh;
+    height: 95vh;
   }
 
   .section_1 {

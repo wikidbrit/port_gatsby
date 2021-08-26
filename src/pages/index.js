@@ -1,5 +1,6 @@
 import * as React from "react"
 import { graphql } from "gatsby"
+import { useEffect } from "react"
 
 import Seo from "../components/seo"
 import HeaderGrid from "../components/headerGrid"
@@ -11,7 +12,15 @@ import Form from "../components/form"
 import Background from "../components/background"
 import Nav from "../components/nav"
 
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 const BlogIndex = ({ data }) => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
     <div>
       <Seo title="Home" />
