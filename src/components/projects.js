@@ -1,7 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Spacer from "../components/spacer"
+
+// import Slide from "../images/transitionSlide.png"
 
 
 export default function projects(props) {
@@ -29,7 +32,7 @@ export default function projects(props) {
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <Link to={post.node.slug} itemProp="url">
+                <AniLink cover bg="linear-gradient(45deg, #0c303f, #400f41)" direction='up' to={post.node.slug} itemProp="url">
                   <div
                   data-aos="zoom-in" data-aos-once="true" data-aos-delay="300"
                     className="projectWrapper"
@@ -49,7 +52,7 @@ export default function projects(props) {
                     </h2>
                     <p className="date">{post.node.createdAt}</p>
                   </div>
-                </Link>
+                </AniLink>
               </article>
               <p className="article code" data-aos="fade-right" data-aos-once="true" data-aos-delay="600">{"</article>"}</p>
             </li>

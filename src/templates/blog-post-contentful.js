@@ -1,5 +1,6 @@
 import * as React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Footer from "../components/footer"
 import Background from "../components/background"
@@ -136,9 +137,9 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
 
         </div>
 
-        <Link className="return" to="/#projects" itemProp="url">
+        <AniLink cover bg="linear-gradient(45deg, #0c303f, #400f41)" direction='down' className="return" to="/#projects" itemProp="url">
           Return
-        </Link>
+        </AniLink>
       </div>
       <Footer />
       <Background />
