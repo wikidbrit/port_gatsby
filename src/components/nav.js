@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export default function nav() {
   return (
-    <nav className="navBar display">
+    <nav className="navBar display" >
       <ul className="navList">
         <li className="navItem navHome">
           <Link className="navLink" to="/">

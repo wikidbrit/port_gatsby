@@ -16,9 +16,13 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 
 const BlogIndex = ({ data }) => {
-
+  
   useEffect(() => {
-    Aos.init({ duration: 2000 })
+    let maxWidth = "960px"
+    Aos.init({ 
+      duration: 1400, 
+      disable: `window.innerWidth < ${maxWidth}`,
+     })
   }, [])
 
   return (

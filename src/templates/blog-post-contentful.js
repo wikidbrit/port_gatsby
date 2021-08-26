@@ -9,7 +9,9 @@ import Nav from "../components/nav"
 import GitHubLogo from "../images/icons/github-01.png"
 import BehanceLogo from "../images/icons/behanceLogo.png"
 
+
 const BlogPostContentfulTemplate = ({ data, location }) => {
+
   const post = data.allContentfulProjects.edges[0].node
   const coverImageUrl = "https:" + post.coverimage.file.url
   const coverImageAlt = post.coverimage.file.filename
@@ -27,7 +29,7 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
   return (
     <div location={location}>
       <Seo title={post.title} />
-      <Nav style={{ zIndex: "1" }} />
+      <Nav style={{ zIndex: "1" }}/>
       <div id="blogPost" style={{ zIndex: "0" }}>
         <img
           className="coverImage"

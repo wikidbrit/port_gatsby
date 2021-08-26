@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react"
 
 export default function background() {
-    return (
-        <div className="background" >
-            
-        </div>
-    )
+  return (
+    <div
+      className="background"
+
+    ></div>
+  )
 }

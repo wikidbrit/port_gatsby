@@ -1,27 +1,20 @@
 import React from "react"
 import SvgLogo from "../components/logoSvg"
-import { useEffect } from "react"
 
 import "/src/styles/svgLogoStyle.css"
 
-import Aos from "aos"
-import "aos/dist/aos.css"
+
 
 export default function HeaderGrid() {
-  useEffect(() => {
-    Aos.init({
-      duration: 2000,
-      dataAosOnce: true,
-    })
-  }, [])
+
 
   return (
     <div className="wrapper">
-      <div className="section_1" data-aos="fade-right">
-        <p className="outerTag code bottom">{"<!DOCTYPE HTML>"}</p>
-        <p className="bodyTag code">{"<body>"}</p>
+      <div className="section_1" >
+        <p className="outerTag code bottom" data-aos="fade-right">{"<!DOCTYPE HTML>"}</p>
+        <p className="bodyTag code" data-aos="fade-right" data-aos-delay="100">{"<body>"}</p>
       </div>
-      <SvgLogo data-aos="fade-down-right" />
+      <SvgLogo />
       <div className="headerTextGrid">
         <p className="innerTag code" data-aos="fade-right" data-aos-delay="300">
           {"<h1 className='getTheirAttention'>"}
