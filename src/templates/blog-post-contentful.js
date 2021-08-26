@@ -68,6 +68,7 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
           />
           <p className=" templateCodeBody buttonTag code">{"</p>"}</p>
         </div>
+
         <img
           className="image2 templateImage"
           alt={image2Alt}
@@ -77,18 +78,19 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
         <h2 className="templateHeader role">My Part</h2>
         <div className="roleText">
           <p className=" templateCodeBody buttonTag code">{"<p>"}</p>
-
           <p
             className="templateText o1"
             dangerouslySetInnerHTML={{ __html: roleText }}
           />
           <p className=" templateCodeBody buttonTag code">{"</p>"}</p>
         </div>
+
         <img
           className="image3 templateImage"
           alt={image3Alt}
           src={image3Url}
         ></img>
+
         <div className=" conclusion">
           <p className=" templateCode buttonTag code">{"<h2>"}</p>
           <h2 className="conHeader">To Sum It Up</h2>
@@ -98,6 +100,7 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
             className="conBody templateText"
             dangerouslySetInnerHTML={{ __html: conclusionText }}
           />{" "}
+
           {post.githubUrl && (
             <div className="renderedIcon">
               <p>
@@ -120,13 +123,15 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
                   <img
                     className="gitHubIcon"
                     src={BehanceLogo}
-                    alt="github icon"
+                    alt="behance icon"
                   ></img>
                 </a>
               </p>
             </div>
           )}
+
           <p className=" templateCode buttonTag code">{"</p>"}</p>
+
         </div>
 
         <Link className="return" to="/#projects" itemProp="url">
