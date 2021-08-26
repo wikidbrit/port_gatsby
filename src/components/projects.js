@@ -6,7 +6,6 @@ import Spacer from "../components/spacer"
 
 // import Slide from "../images/transitionSlide.png"
 
-
 export default function projects(props) {
   const posts = props.data.allContentfulProjects.edges
 
@@ -14,27 +13,74 @@ export default function projects(props) {
 
   return (
     <div id="projects">
-      <div className="percent projectHeader" data-aos="fade-right" data-aos-once="true">
-        <p className=" buttonTag code" data-aos="fade-right" data-aos-once="true">{"<h2>"}</p>
-        <h2 className="twoper" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">Projects</h2>
-        <p className=" buttonTag code" data-aos="fade-right" data-aos-once="true" data-aos-delay="600">{"</h2>"}</p>
+      <div
+        className="percent projectHeader"
+        data-aos="fade-right"
+        data-aos-once="true"
+      >
+        <p
+          className=" buttonTag code"
+          data-aos="fade-right"
+          data-aos-once="true"
+        >
+          {"<h2>"}
+        </p>
+        <h2
+          className="twoper"
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-delay="300"
+        >
+          Projects
+        </h2>
+        <p
+          className=" buttonTag code"
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-delay="600"
+        >
+          {"</h2>"}
+        </p>
       </div>
-      
 
       <Spacer />
       <ol>
         {posts.map(post => {
           return (
-            <li className="list" key={post.node.slug} data-aos="fade-right" data-aos-once="true">
-              <p className=" article code" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">{"<article>"}</p>
-              <article data-aos="fade-right" data-aos-once="true" data-aos-delay="600"
+            <li
+              className="list"
+              key={post.node.slug}
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
+              <p
+                className=" article code"
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-delay="300"
+              >
+                {"<article>"}
+              </p>
+              <article
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-delay="600"
                 className="post-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <AniLink cover bg="linear-gradient(45deg, #0c303f, #400f41)" direction='up' to={post.node.slug} itemProp="url">
+                <AniLink
+                  cover 
+                  bg="linear-gradient(45deg, #0c303f, #400f41)"
+                  // bg={"url(" + Slide + ")"}
+                  direction="up"
+                  to={post.node.slug}
+                  itemProp="url"
+                >
                   <div
-                  data-aos="zoom-in" data-aos-once="true" data-aos-delay="300"
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                    data-aos-delay="300"
                     className="projectWrapper"
                     style={{
                       padding: "5px 25px",
@@ -42,7 +88,7 @@ export default function projects(props) {
                       margin: "20px auto",
                       backgroundImage:
                         "url(https://" + post.node.coverimage.file.url + ")",
-                        backgroundPosition:'center',
+                      backgroundPosition: "center",
                     }}
                   >
                     <h2>
@@ -54,7 +100,14 @@ export default function projects(props) {
                   </div>
                 </AniLink>
               </article>
-              <p className="article code" data-aos="fade-right" data-aos-once="true" data-aos-delay="600">{"</article>"}</p>
+              <p
+                className="article code"
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-delay="600"
+              >
+                {"</article>"}
+              </p>
             </li>
           )
         })}

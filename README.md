@@ -32,13 +32,13 @@ Care to see the deployed site? [Check it out!](https://fleming.digital).
 
 ## 🚗 Whats Coming Next
 
-1. DONE
-2. I would like to render buttons depending on if the information is available from the CMS. I have the basis of that figured out. 
-3. DONE
-4. Animations!!
-5. CMS content needs to be added and I need to narrow down the projects I plan to show.
-6. Clean the repo some to remove the placeholder assets provided by Gatsby.
-7. Refine page transitions and subtile scroll reveal.
+1. *DONE*
+2. *DONE*
+3. *DONE*
+4. *DONE*
+5. *DONE*
+6. Clean the repo some to remove the placeholder assets provided by Gatsby, remove paths to previous blog post template.
+7. *DONE*
 
 <p align="center">
     <img alt="Logo" src="src/images/fulllogo-12.png" width="80" />

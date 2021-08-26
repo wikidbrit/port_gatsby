@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import Seo from "../components/seo"
 import Background from "../components/background"
 import Nav from "../components/nav"
+import SvgLogo from "../components/logoSvg"
 
 const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -12,7 +13,20 @@ const NotFoundPage = ({ data, location }) => {
     <div className='navSpace' location={location} title={siteTitle}>
       <Seo title="404: Not Found" />
       <Nav />
-      <h1
+      <section style={{
+        display: "flex",
+        flexDirection: 'column',
+        paddingTop: '100px'
+      }}>
+        {/* <SvgLogo style={{left: '0'}}/> */}
+        <h1 style={{margin:'100px auto 15% auto', color:'white', fontSize:'30vw'}}>404</h1>
+        <h3 style={{margin:'20px auto 0px auto', fontFamily: 'Source Sans Pro', color:'white'}} >Page Not Found</h3>
+        <p style={{margin:'10px auto', fontFamily: 'Source Sans Pro', color:'white'}}>You have landed on a page that doesn't exist</p>
+        <Link className='button404' to="/">
+          Home
+        </Link>
+      </section>
+      {/* <h1
         style={{
           margin: "100px auto",
         }}
@@ -35,7 +49,7 @@ const NotFoundPage = ({ data, location }) => {
           Go Home
           <div className="button404"></div>
         </Link>
-      </div>
+      </div> */}
       <Background />
     </div>
   )
