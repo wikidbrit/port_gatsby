@@ -84,13 +84,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          'G-88HG3K9F6H', 
-        ],      
-      },
-    },
+  
   ],
 }
