@@ -5,6 +5,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Spacer from "../components/spacer"
 
 // import Slide from "../images/transitionSlide.png"
+// Need to find a way to center the cover image during the transition. 
 
 export default function projects(props) {
   const posts = props.data.allContentfulProjects.edges
