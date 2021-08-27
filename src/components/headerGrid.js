@@ -3,16 +3,16 @@ import SvgLogo from "../components/logoSvg"
 
 import "/src/styles/svgLogoStyle.css"
 
-
-
 export default function HeaderGrid() {
-
-
   return (
     <div className="wrapper">
-      <div className="section_1" >
-        <p className="outerTag code bottom" data-aos="fade-right">{"<!DOCTYPE HTML>"}</p>
-        <p className="bodyTag code" data-aos="fade-right" data-aos-delay="100">{"<body>"}</p>
+      <div className="section_1">
+        <p className="outerTag code bottom" data-aos="fade-right">
+          {"<!DOCTYPE HTML>"}
+        </p>
+        <p className="bodyTag code" data-aos="fade-right" data-aos-delay="100">
+          {"<body>"}
+        </p>
       </div>
       <SvgLogo />
       <div className="headerTextGrid">
@@ -30,7 +30,7 @@ export default function HeaderGrid() {
         </p>
       </div>
 
-      <div className="buttonArea" data-aos="fade-right" data-aos-delay="1200">
+      <div className="buttonArea" data-aos="fade-right" data-aos-delay="1200" data-aos-once="true">
         <p className="buttonTag code" style={{ marginTop: "10px" }}>
           {"<button className='pressAllTheButtons'>"}
         </p>
