@@ -4,7 +4,6 @@ import { graphql, Link } from "gatsby"
 import Seo from "../components/seo"
 import Background from "../components/background"
 import Nav from "../components/nav"
-import SvgLogo from "../components/logoSvg"
 
 const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title

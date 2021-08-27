@@ -74,7 +74,7 @@ export default function projects(props) {
                   cover 
                   bg="linear-gradient(45deg, #0c303f, #400f41)"
                   // bg={"url(" + Slide + ")"}
-                  direction="up"
+                  direction="left"
                   to={post.node.slug}
                   itemProp="url"
                 >

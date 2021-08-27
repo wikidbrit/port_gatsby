@@ -10,9 +10,7 @@ import Nav from "../components/nav"
 import GitHubLogo from "../images/icons/github-01.png"
 import BehanceLogo from "../images/icons/behanceLogo.png"
 
-
 const BlogPostContentfulTemplate = ({ data, location }) => {
-
   const post = data.allContentfulProjects.edges[0].node
   const coverImageUrl = "https:" + post.coverimage.file.url
   const coverImageAlt = post.coverimage.file.filename
@@ -30,7 +28,7 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
   return (
     <div location={location}>
       <Seo title={post.title} />
-      <Nav style={{ zIndex: "1" }}/>
+      <Nav style={{ zIndex: "1" }} />
       <div id="blogPost" style={{ zIndex: "0" }}>
         <img
           className="coverImage"
@@ -103,7 +101,6 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
             className="conBody templateText"
             dangerouslySetInnerHTML={{ __html: conclusionText }}
           />{" "}
-
           {post.githubUrl && (
             <div className="renderedIcon">
               <p>
@@ -132,12 +129,17 @@ const BlogPostContentfulTemplate = ({ data, location }) => {
               </p>
             </div>
           )}
-
           <p className=" templateCode buttonTag code">{"</p>"}</p>
-
         </div>
 
-        <AniLink cover bg="linear-gradient(45deg, #0c303f, #400f41)" direction='down' className="return" to="/#projects" itemProp="url">
+        <AniLink
+          cover
+          bg="linear-gradient(45deg, #0c303f, #400f41)"
+          direction="right"
+          className="return"
+          to="/#projects"
+          itemProp="url"
+        >
           Return
         </AniLink>
       </div>
