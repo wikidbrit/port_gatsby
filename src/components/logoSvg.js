@@ -47,6 +47,7 @@ export default function LogoSvg(props) {
   }
 
   return (
+
     <div className="svgContainer">
       <MouseArea onMouseMove={handleMouse}></MouseArea>
       {/* Top Aesthetic Gradient Layer */}
