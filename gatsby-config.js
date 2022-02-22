@@ -25,6 +25,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-transition-link`,
+    'gatsby-plugin-optimize-svgs',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
